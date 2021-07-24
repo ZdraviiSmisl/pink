@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Евгений Арапов](https://up.htmlacademy.ru/adaptive/23/user/1691415).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Григорьев](https://htmlacademy.ru/profile/fuckhtml).
 
 ---
 

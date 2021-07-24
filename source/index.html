@@ -1,12 +1,216 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
-  </body>
+<html class="page" lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Пинк</title>
+    </head>
+    <body class="page__body">
+        <header class="page-header header">
+            <div class="wrapper">
+                <h1 class="header__title">PINK</h1>
+                <nav class="main-navigation">
+                    <button class="main-navigation__toggle button" type="button" aria-label="Открыть меню">Открыть меню</button>
+                    <ul class="main-navigation__list">
+                        <li class="main-navigation__item">
+                            <a href=".">Главная</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a href=".">Фотографии</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a href=".">Конкурс</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a href=".">html academy</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="header__slogan">Взгляните на жизнь иначе</p>
+            </div>
+        </header>
+        <main class="page-main main">
+            <section class="page-downloads downloads">
+                <div class="wrapper">
+                    <h2 class="visually-hidden">Загрузка приложения на разные платформы</h2>
+                    <a class="downloads__link" href="https://www.apple.com/iphone/">Скачать приложение</a>
+                    <ul class="downloads__list">
+                        <li class="downloads__item">
+                            <a class="downloads__link-apple" href="" aria-label="перейти в магазин Apple">
+                                <img src="../source/img/logo/apple-logo.png" alt="Логотип Apple" width="47" height="56">
+                            </a>
+                        </li>
+                        <li class="downloads__item">
+                            <a class="downloads__link-google" href="" aria-label="перейти в Google play">
+                                <img src="../source/img/logo/android-logo.png" alt="Логотип Android">
+                            </a>
+                        </li>
+                        <li class="downloads__item">
+                            <a class="downloads__link-microsoft" href="" aria-label="перейти в Microsoft store">
+                                <img src="../source/img/logo/microsoft-logo.png" alt="Логотип Microsoft">
+                            </a>
+                        </li>
+                    </ul>
+                        <p class="downloads__text">
+                             Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8
+                        </p>
+                </div>
+            </section>
+            <section class="slogan-page slogan">
+                <div class="wrapper">
+                    <h2 class="visually-hidden">Слоган компании-разработчика</h2>
+                    <p class="slogan__text">Устали от серости мегаполиса?
+                      Нам есть что вам сказать</p>
+                </div>
+            </section>
+            <section class="advantages page-advantages">
+                <h2 class="visually-hidden">Преимущества приложения</h2>
+                <div class="wrapper">
+                    <ul class="advantages__list">
+                        <li class="advantages__item">
+                            <h3 class="advantages__title">Поднимает настроение</h3>
+                            <p class="advantages__text">
+                              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <h3 class="advantages__title">Меняет мир вокруг</h3>
+                            <p class="advantages__text">
+                              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <h3 class="advantages__title">
+                              Заводит новых друзей
+                            </h3>
+                            <p class="advantages__text">
+                              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="page-reviews reviews">
+                <h2 class="visually-hidden">Отзывы</h2>
+                <div class="wrapper slider">
+                    <div class="reviews__list slider__list">
+                        <blockquote class="reviews__item slider__item">
+                            <cite class="reviews__author-name">Николай Петров</cite>
+                            <p class="reviews__author-info">25 лет, водитель трамвая</p>
+                            <p class="reviews__text">
+                              «Это приложение перевернуло мой мир<br> и позволило по-новому взглянуть на<br> привычные серые вещи!
+                              А еще я<br> познакомился со своей будущей женой<br> в комментариях к выложенной<br> фотографии!»
+                            </p>
+                        </blockquote>
+                        <blockquote class="reviews__item slider__item visually-hidden">
+                            <cite class="reviews__author-name"></cite>
+                            <p class="reviews__author-info"></p>
+                            <p class="reviews__text"></p>
+                        </blockquote>
+                        <blockquote class="reviews__item slider__item visually-hidden">
+                            <cite class="reviews__author-name"></cite>
+                            <p class="reviews__author-info"></p>
+                            <p class="reviews__text"></p>
+                        </blockquote>
+                    </div>
+                    <div class="reviews__toggles slider__toggles">
+                        <button class="slider__toggle slider__toggle--current" type="button">1</button>
+                        <button class="slider__toggle" type="button">2</button>
+                        <button class="slider__toggle" type="button">3</button>
+                    </div>
+                </div>
+            </section>
+            <section class="page__tariff-plans tariff-plans">
+                <h2 class="visually-hidden">Тарифные планы</h2>
+                <div class="wrapper slider">
+                    <div class="slider__slides">
+                        <div class="slider__slide">
+                            <h3 class="slider__title">Стандарт</h3>
+                            <p class="slider__price">3,99 usd</p>
+                            <ul class="slider__list">
+                                <li class="slider__item">Розовый фильтр</li>
+                                <li class="slider__item">Смайлики</li>
+                                <li class="slider__item">Комментарии</li>
+                            </ul>
+                        </div>
+                        <div class="slider__slide">
+                            <h3 class="slider__title">База</h3>
+                            <p class="slider__price">1,99 usd</p>
+                            <ul class="slider__list">
+                                <li class="slider__item">Розовый фильтр</li>
+                                <li class="slider__item">Смайлики</li>
+                                <li class="slider__item">Комментарии</li>
+                            </ul>
+                        </div>
+                        <div class="slider__slide">
+                            <h3 class="slider__title">Анлим</h3>
+                            <p class="slider__price">9,99 usd</p>
+                            <ul class="slider__list">
+                                <li class="slider__item">Розовый фильтр</li>
+                                <li class="slider__item">Смайлики</li>
+                                <li class="slider__item">Комментарии</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tariff-plans__toggles slider__toggles">
+                        <button class="slider__toggle" type="button">1</button>
+                        <button class="slider__toggle slider__toggle--current" type="button">2</button>
+                        <button class="slider__toggle" type="button">3</button>
+                    </div>
+                </div>
+            </section>
+            <section class="page-feedback feedback">
+                <h2 class="visually-hidden">Блок контактной информации</h2>
+                <div class="wrapper">
+                    <p class="feedback__title">Остались вопросы?<br>
+                      Свяжитесь с нами!</p>
+                    <p class="feedback__contacts phone" aria-label="номер телефона">
+                        <span class="phone__title">Звоните:</span>
+                        <a class="phone__link" href="tel:+7812555666">
+                         +7 (812) 555-66-66
+                        </a>
+                    </p>
+                    <p class="feedback__contacts e-mail" aria-label="Почтовый ящик">
+                        <span class="e-mail__title">Пишите:</span>
+                        <a class="e-mail__link" href="mailto:mail@htmlacademy.ru"></a>mail@htmlacademy.ru
+                    </p>
+                    <p class="feedback__contacts address" aria-label="блок адреса компании">
+                        <span class="address__title">Приезжайте в гости:</span>
+                        <a class="address__link" href=".">
+                            <span class="address__text">ул. Большая Конюшенная, 19/8</span>
+                        </a>
+                    </p>
+                    <p class="feedback__contacts map" aria-label="Блок карты">
+                        <a class="map__link" href="https://yandex.ru/maps/2/saint-petersburg/house/naberezhnaya_reki_karpovki_5p/Z0kYdQZnSkAOQFtjfXV3eX9hZg==/inside/?ll=30.317359%2C59.968322&tab=inside&z=16.31">
+                           <img class="map__img" src="../source/img/map/map.png" alt="местоположении офиса" width="320" height="200">
+                        </a>
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer class="page-footer footer">
+            <div class="wrapper">
+                <p class="footer__logo logo">
+                    <h1 class="logo__title"></h1>
+                    <a class="logo__link" href="." aria-label="Логотип приложения"></a>
+                </p>
+                <div class="footer__social social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href="https://twitter.com/htmlacademy_ru" aria-label="переход на twitter компании">Twitter</a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.facebook.com/htmlacademy" aria-label="переход  на facebook компании">Facebook</a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.youtube.com/user/htmlacademyru" aria-label="переход на youtube канал ">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__copyright copyright">
+                    <span class="copyright__text">Разработано</span>
+                    <a href="." aria-label="Логотип компании"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
