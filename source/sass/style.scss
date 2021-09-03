@@ -1,1 +1,30 @@
 // Начните писать стили здесь
+
+//Global
+
+@import "global/normalize";
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/visually-hidden.scss";
+
+//Blocks
+
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-header__navigation.scss";
+@import "blocks/downloads.scss";
+@import "blocks/slogan.scss";
+@import "blocks/advantages.scss";
+@import "blocks/reviews.scss";
+@import "blocks/tariff-plans.scss";
+@import "blocks/feeddback.scss";
+@import "blocks/footer.scss";
+@import "blocks/studies.scss";
+@import "blocks/map.scss";
+@import "blocks/header-form.scss";
+@import "blocks/form.scss";
+@import "blocks/editor.scss";
+@import "blocks/photos.scss";
+@import "blocks/success-modal.scss";
+@import "blocks/error-modal.scss";

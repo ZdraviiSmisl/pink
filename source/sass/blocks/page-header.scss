@@ -1,0 +1,39 @@
+.page-header {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  outline: 3px solid darkorchid;
+  width: 100%;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  @include wrapper;
+}
+
+@media (min-width: 768px) {
+
+  .page-header {
+    outline: 3px solid cornflowerblue;
+  }
+
+  .page-header__wrapper {
+    width: 660px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .page-header {
+    outline: 3px solid navy;
+  };
+
+  .page-header__wrapper {
+    width: 1200px;
+    padding: 0 130px;
+  }
+
+}

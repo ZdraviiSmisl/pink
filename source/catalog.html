@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html class="page-catalog" lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
     <title>Catalog</title>
+    <link rel="stylesheet" href="../source/css/style.min.css">
   </head>
   <body class="page__body">
     <header class="header-form">
@@ -110,12 +111,13 @@
         </article>
       </div>
     </section>
-      <section class="page-editor editor">
+      <section class="editor">
         <h2 class="visually-hidden">Инструмент обработки изображений</h2>
           <div class="wrapper">
-            <from class="editor-form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
-              <a href="#" aria-label="редактируемое изображение">
-                <img src="../source/img/photos/winter_road.jpg" width="280" height="374" alt="Зимняя дорога">
+            <p class="editor__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+            <form class="editor-form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+              <a class="editor__link" href="#" aria-label="редактируемое изображение">
+                <img class="editor__img" src="../source/img/photos/winter_road.jpg" width="280" height="374" alt="Зимняя дорога">
               </a>
               <div class="editor__block button-block">
                 <button class="button-block__button button" aria-label="кнопка кадрирования изображения">
@@ -143,7 +145,7 @@
               </div>
                 <button class="editor-form__button button-submit" type="submit" aria-label="сделать пост">Запостить</button>
                 <button class="editor-form__button button-reset" type="reset" aria-label="отменить пост" >Отмена</button>
-            </from>
+            </form>
           </div>
       </section>
   </main>

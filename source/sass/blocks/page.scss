@@ -1,0 +1,13 @@
+.page {
+  border: 3px solid darkgoldenrod;
+}
+
+.page__body {
+  margin: 0;
+  min-width: 280px;
+  min-height: 100vh;
+  font-family: "Open Sans", "arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-basic-black;
+}

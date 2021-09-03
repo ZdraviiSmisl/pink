@@ -1,0 +1,22 @@
+.tariffs {
+  height: 100vh;
+  outline: 3px solid red;
+
+}
+
+.tariffs__wrapper {
+
+  @include wrapper;
+}
+
+.tariffs__table {
+  outline: 3px solid black;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
