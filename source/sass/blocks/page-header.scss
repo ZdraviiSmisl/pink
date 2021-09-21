@@ -1,39 +1,204 @@
 .page-header {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.3);
-  outline: 3px solid darkorchid;
   width: 100%;
+  z-index: 10;
+}
+
+/*svg path {
+  fill:inherit;
+  stroke:inherit;
+  stroke-width:inherit;
+}*/
+
+.page-checkbox {
+  display: none;
 }
 
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
+  max-height: 66px;
+  background-color: $color-black-transparent;
 
   @include wrapper;
 }
 
-@media (min-width: 768px) {
+.page-checkbox:checked ~ .page-header__wrapper {
+  background-color: $color-basic-black;
+  border-bottom: 1px solid $color-original-black;
+}
 
-  .page-header {
-    outline: 3px solid cornflowerblue;
+
+.page-checkbox:checked~.page-nav {
+  display: block;
+  margin: 0 auto;
+  width: 320px;
+  min-height: 55px;
+  background-color: $color-basic-black;
+}
+
+.page-checkbox:not(:checked)~.page-nav {
+  display: none;
+}
+
+.page__logo-img {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  cursor: pointer;
+}
+
+
+.logo-img:hover {
+  fill: $color-red;
+}
+
+.page-nav__toggle {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 50px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.page-nav__toggle>.page-nav__menu,
+.page-nav__toggle>.page-nav__menu:before,
+.page-nav__toggle>.page-nav__menu:after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: $color-white;
+}
+
+.page-nav__toggle>.page-nav__menu:before {
+  content: "";
+  top: -10px;
+
+}
+.page-nav__toggle>.page-nav__menu:after {
+  content: "";
+  top: 10px;
+}
+
+.page-nav__menu:hover,
+.page-nav__menu:hover:before,
+.page-nav__menu:hover:after {
+  background-color:$color-red;
+}
+
+.page-nav__menu:active,
+.page-nav__menu:active:before,
+.page-nav__menu:active:after{
+  opacity: 0.3;
+}
+
+.page-checkbox:checked ~.page-header__wrapper .page-nav__toggle .page-nav__menu {
+  transform: rotate(45deg);
+}
+
+.page-checkbox:checked ~.page-header__wrapper .page-nav__toggle .page-nav__menu:before {
+  top:0;
+  transform: rotate(0);
+}
+
+.page-checkbox:checked ~.page-header__wrapper .page-nav__toggle .page-nav__menu:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.page-nav__list {
+  margin: 0;
+  text-align: center;
+
+  @include list-unstyled;
+}
+
+.page-nav__link {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  border-top: 1px solid $color-white-transparent;
+  border-bottom: 1px solid $color-original-black;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-white;
+
+  @include link-unstyled;
+
+  &:hover {
+    color:$color-red;
   }
 
-  .page-header__wrapper {
-    width: 660px;
+  &:active {
+    opacity: 0.3;
   }
 }
 
-@media (min-width: 1200px) {
-
-  .page-header {
-    outline: 3px solid navy;
-  };
+@media (min-width: 768px) {
 
   .page-header__wrapper {
-    width: 1200px;
-    padding: 0 130px;
+    width: 660px;
+    max-height: 110px;
   }
 
+  .page__logo-img {
+    padding-top: 27px;
+    padding-bottom: 42px;
+  }
+
+  .page-checkbox:checked~.page-nav {
+    width: 660px;
+  }
+  }
+
+@media (min-width: 1200px) {
+
+  .page-checkbox:not(:checked)~ .page-header__wrapper,
+  .page-checkbox:checked ~ .page-header__wrapper {
+    width: 1200px;
+    padding: 0 130px;
+    background-color: $color-black-transparent;
+    border: none;
+  }
+
+  .page-checkbox:checked~.page-nav,
+  .page-checkbox:not(:checked)~.page-nav {
+    margin: 0 auto;
+    display: block;
+    width: 940px;
+    background-color: transparent;
+    transform: translate(280px,-85px);
+  }
+
+  .page-nav {
+    padding-top: 15px;
+  }
+
+  .page-nav__toggle {
+    display: none;
+  }
+
+  .page-nav__list {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    flex: 1 0 auto;
+  }
+
+  .page-nav__link {
+    padding: 0 40px;
+    font-weight: 400;
+    text-transform: none;
+    border: none;
+  }
+
+  .page-nav__active {
+    text-underline-position: under;
+    text-decoration-color: $color-white;
+  }
 }

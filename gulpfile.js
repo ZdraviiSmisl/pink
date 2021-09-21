@@ -163,9 +163,7 @@ const build = gulp.series(
     styles,
     html,
     scripts,
-/*
     sprite,
-*/
     createWebp
   ),
 );
@@ -182,9 +180,7 @@ exports.default = gulp.series(
     styles,
     html,
     scripts,
-/*
     sprite,
-*/
     createWebp
   ),
   gulp.series(

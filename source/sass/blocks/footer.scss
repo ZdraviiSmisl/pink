@@ -6,7 +6,6 @@
 .footer__wrapper {
   display: flex;
   flex-flow: column wrap;
-  outline: 3px solid red;
 
   @include wrapper;
 }
@@ -48,8 +47,8 @@
   background-image: url("../../img/icons/html academy.svg");
   background-repeat: no-repeat;
   background-position: center;
-}
 
+}
 @media (min-width: 768px) {
 
   .footer__wrapper {
@@ -59,7 +58,6 @@
     grid-template-columns: repeat(3,auto) ;
     grid-template-rows:repeat(1,1fr) ;
     width: 660px;
-    outline: 3px solid yellow;
   }
 
   .footer__part {
@@ -72,6 +70,5 @@
   .footer__wrapper {
     width: 1200px;
     padding: 0 130px;
-    outline: 3px solid black;
   }
 }
