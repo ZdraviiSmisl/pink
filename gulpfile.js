@@ -11,7 +11,7 @@ const htmlmin = require("gulp-htmlmin");
 const terser = require("gulp-terser");
 const squoosh = require("gulp-libsquoosh");
 const webp = require("gulp-webp");
-const svgstore = require("svgstore");
+const svgstore = require("gulp-svgstore");
 const del = require("del");
 
 

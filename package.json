@@ -20,8 +20,7 @@
     "postcss": "^8.3.6",
     "postcss-csso": "^5.0.1",
     "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "0.1.10",
-    "svgstore": "^3.0.0-2"
+    "stylelint-config-htmlacademy": "0.1.10"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -46,5 +45,7 @@
   "engines": {
     "node": "^12 || ^14"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-svgstore": "^8.0.0"
+  }
 }

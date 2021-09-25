@@ -1,16 +1,14 @@
 .tariffs {
-  height: 100vh;
   font-family: $font;
   text-transform: uppercase;
 }
 
-
 .tariffs__wrapper {
   margin: 0 auto;
+  padding-top: 83px;
   width: 320px;
   overflow: hidden;
   background-color: $color-grey;
-
 }
 
 .tariffs__radio {

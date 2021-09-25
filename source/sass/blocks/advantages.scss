@@ -1,12 +1,23 @@
 .advantages {
-  height: 100vh;
   font-family: $font;
 }
 
 .advantages__wrapper {
+  position: relative;
   background-color: $color-grey;
 
   @include wrapper;
+}
+
+.advantages__wrapper:before {
+  content: "";
+  position: absolute;
+  top:-33px;
+  left: 0;
+  width: 100%;
+  height: 33px;
+  background-color: $color-grey;
+  clip-path: polygon(100% 0,100% 33px,0 33px);
 }
 
 .advantages__list {
