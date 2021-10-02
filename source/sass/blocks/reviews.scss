@@ -1,5 +1,5 @@
 .reviews {
-  padding-top: 50px;
+  padding-bottom: 41px;
   font-family: $font;
   background-color: $color-white;
 }
@@ -69,10 +69,6 @@
       background-color: $color-white;
       border: 3px solid $color-basic-black;
     }
-
-    &:nth-of-type(2) {
-      padding: 2.5px;
-  }
 
     &:nth-of-type(3) {
       margin-right: 0;

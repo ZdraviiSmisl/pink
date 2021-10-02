@@ -34,12 +34,13 @@
     margin: 0;
     font-size: 40px;
     line-height: 55px;
-  }
 
-  .slogan__text:nth-of-type(2) {
-    padding: 0 50px;
+    &:nth-of-type(2) {
+      margin-bottom: 47px;
+      padding: 0 50px;
+    }
   }
-  }
+ }
 
 @media (min-width: 1200px) {
 
@@ -56,6 +57,4 @@
   .slogan__text:nth-of-type(2) {
     padding: 0 150px;
   }
-
-
 }

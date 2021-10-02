@@ -1,6 +1,8 @@
 .page-header {
   position: absolute;
   width: 100%;
+  min-width: 280px;
+  background-color: $color-black-transparent;
   z-index: 10;
 }
 
@@ -13,9 +15,12 @@
   justify-content: space-between;
   align-items: center;
   max-height: 69px;
-  background-color: $color-black-transparent;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   @include wrapper;
+
 }
 
 .page-checkbox:checked ~ .page-header__wrapper {
@@ -26,8 +31,8 @@
 .page-checkbox:checked~.page-nav {
   display: block;
   margin: 0 auto;
-  width: 320px;
-  min-height: 55px;
+  width: 100%;
+  min-height: 69px;
   background-color: $color-basic-black;
 }
 
@@ -73,7 +78,8 @@
   display: flex;
   align-items: center;
   position: relative;
-  width: 30px;
+  width: 50px;
+  height: 24px;
   cursor: pointer;
   z-index: 1;
 }
@@ -112,6 +118,7 @@
 
 .page-checkbox:checked ~.page-header__wrapper .page-nav__toggle .page-nav__menu {
   transform: rotate(45deg);
+  width: 30px;
 }
 
 .page-checkbox:checked ~.page-header__wrapper .page-nav__toggle .page-nav__menu:before {
@@ -127,14 +134,15 @@
 .page-nav__list {
   margin: 0;
   text-align: center;
+  width: 100%;
 
   @include list-unstyled;
 }
 
 .page-nav__link {
   display: block;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
@@ -153,13 +161,20 @@
   &:active {
     opacity: 0.3;
   }
+
+  &[aria-current=page]{
+    text-decoration-line:underline;
+    text-decoration-thickne:2px;
+    text-underline-offset: 13px;
+  }
 }
 
 @media (min-width: 768px) {
 
   .page-header__wrapper {
-    width: 660px;
     max-height: 110px;
+    padding-bottom: 27px;
+    padding-top: 27px;
   }
 
   .page__tablet {
@@ -172,20 +187,16 @@
       transform: translateX(0);
     }
   }
-
-  .page-checkbox:checked~.page-nav {
-    width: 660px;
-  }
   }
 
 @media (min-width: 1200px) {
 
   .page-checkbox:not(:checked)~ .page-header__wrapper,
   .page-checkbox:checked ~ .page-header__wrapper {
-    width: 1200px;
     padding: 0 130px;
     background-color: $color-black-transparent;
     border: none;
+    box-shadow: none;
   }
 
   .page__tablet {
@@ -203,11 +214,7 @@
     display: block;
     width: 940px;
     background-color: transparent;
-    transform: translate(280px,-15px);
-  }
-
-  .page-nav {
-    padding-top: 15px;
+    transform: translate(280px, 0px);
   }
 
   .page-nav__toggle {
@@ -243,11 +250,5 @@
     text-transform: none;
     border: none;
 
-    &[aria-current=page]{
-      text-decoration-line:underline;
-      text-decoration-thickne:2px;
-      text-underline-offset: 13px;
-    }
   }
-
 }

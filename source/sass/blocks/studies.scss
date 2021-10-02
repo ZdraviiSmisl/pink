@@ -1,11 +1,11 @@
 
 .studies {
-  font-family: $font;
+  margin-bottom: 109px;
   display: none;
+  font-family: $font;
 }
 
 .studies__wrapper {
-  background: $color-grey;
 
   @include wrapper;
 }
@@ -49,6 +49,10 @@
 
   .studies__item {
     margin-bottom: 24px;
+  }
+
+  .studies__text {
+    margin-right: 12px;
   }
 }
 
