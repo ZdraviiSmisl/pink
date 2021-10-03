@@ -1,5 +1,7 @@
 .page-header {
+  /*
   position: absolute;
+  */
   width: 100%;
   min-width: 280px;
   background-color: $color-black-transparent;
@@ -20,7 +22,6 @@
   padding-bottom: 12px;
 
   @include wrapper;
-
 }
 
 .page-checkbox:checked ~ .page-header__wrapper {
@@ -28,7 +29,7 @@
   border-bottom: 1px solid $color-original-black;
 }
 
-.page-checkbox:checked~.page-nav {
+.page-checkbox:checked ~ .page-nav {
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -36,7 +37,7 @@
   background-color: $color-basic-black;
 }
 
-.page-checkbox:not(:checked)~.page-nav {
+.page-checkbox:not(:checked) ~ .page-nav {
   display: none;
 }
 
@@ -45,11 +46,11 @@
   color: $color-white;
 
   &:hover {
-    color: $color-red
+    color: $color-red;
   }
 
   &:active {
-    color: $color-white-thirty
+    color: $color-white-thirty;
   }
 }
 
@@ -65,11 +66,11 @@
   display: block;
   padding-bottom: 15px;
 
-  &>.logo-glasses {
+  & > .logo-glasses {
     display: none;
   }
 
-  &>.logo-word {
+  & > .logo-word {
     transform: translateX(-70px);
   }
 }
@@ -84,9 +85,9 @@
   z-index: 1;
 }
 
-.page-nav__toggle>.page-nav__menu,
-.page-nav__toggle>.page-nav__menu:before,
-.page-nav__toggle>.page-nav__menu:after {
+.page-nav__toggle > .page-nav__menu,
+.page-nav__toggle > .page-nav__menu::before,
+.page-nav__toggle > .page-nav__menu::after {
   display: block;
   position: absolute;
   width: 100%;
@@ -94,42 +95,42 @@
   background-color: $color-white;
 }
 
-.page-nav__toggle>.page-nav__menu:before {
+.page-nav__toggle > .page-nav__menu::before {
   content: "";
   top: -10px;
 }
 
-.page-nav__toggle>.page-nav__menu:after {
+.page-nav__toggle > .page-nav__menu::after {
   content: "";
   top: 10px;
 }
 
 .page-nav__menu:hover,
-.page-nav__menu:hover:before,
-.page-nav__menu:hover:after {
-  background-color:$color-red;
+.page-nav__menu:hover::before,
+.page-nav__menu:hover::after {
+  background-color: $color-red;
 }
 
 .page-nav__menu:active,
-.page-nav__menu:active:before,
-.page-nav__menu:active:after{
+.page-nav__menu:active::before,
+.page-nav__menu:active::after {
   opacity: 0.3;
 }
 
-.page-checkbox:checked ~.page-header__wrapper .page-nav__toggle .page-nav__menu {
+/*.page-checkbox:checked ~ .page-header__wrapper .page-nav__toggle .page-nav__menu {
   transform: rotate(45deg);
   width: 30px;
 }
 
-.page-checkbox:checked ~.page-header__wrapper .page-nav__toggle .page-nav__menu:before {
-  top:0;
+.page-checkbox:checked ~ .page-header__wrapper .page-nav__toggle .page-nav__menu::before {
+  top: 0;
   transform: rotate(0);
 }
 
-.page-checkbox:checked ~.page-header__wrapper .page-nav__toggle .page-nav__menu:after {
+.page-checkbox:checked ~ .page-header__wrapper .page-nav__toggle .page-nav__menu::after {
   top: 0;
   transform: rotate(90deg);
-}
+}*/
 
 .page-nav__list {
   margin: 0;
@@ -155,22 +156,21 @@
   @include link-unstyled;
 
   &:hover {
-    color:$color-red;
+    color: $color-red;
   }
 
   &:active {
     opacity: 0.3;
   }
 
-  &[aria-current=page]{
-    text-decoration-line:underline;
-    text-decoration-thickne:2px;
+  &[aria-current="page"] {
+    text-decoration-line: underline;
+    text-decoration-thickne: 2px;
     text-underline-offset: 13px;
   }
 }
 
 @media (min-width: 768px) {
-
   .page-header__wrapper {
     max-height: 110px;
     padding-bottom: 27px;
@@ -178,20 +178,18 @@
   }
 
   .page__tablet {
-
-    &>.logo-glasses {
+    & > .logo-glasses {
       display: block;
     }
 
-    &>.logo-word {
+    & > .logo-word {
       transform: translateX(0);
     }
   }
-  }
+}
 
 @media (min-width: 1200px) {
-
-  .page-checkbox:not(:checked)~ .page-header__wrapper,
+  .page-checkbox:not(:checked) ~ .page-header__wrapper,
   .page-checkbox:checked ~ .page-header__wrapper {
     padding: 0 130px;
     background-color: $color-black-transparent;
@@ -208,13 +206,13 @@
     transform: translateY(27px);
   }
 
-  .page-checkbox:checked~.page-nav,
-  .page-checkbox:not(:checked)~.page-nav {
+  .page-checkbox:checked ~ .page-nav,
+  .page-checkbox:not(:checked) ~ .page-nav {
     margin: 0 auto;
     display: block;
     width: 940px;
     background-color: transparent;
-    transform: translate(280px, 0px);
+    transform: translate(280px, 0);
   }
 
   .page-nav__toggle {
@@ -249,6 +247,5 @@
     font-weight: 400;
     text-transform: none;
     border: none;
-
   }
 }
