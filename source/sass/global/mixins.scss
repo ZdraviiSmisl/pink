@@ -1,0 +1,30 @@
+@mixin wrapper {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+@mixin list-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin button-unstyled {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@mixin link-unstyled {
+  &, &:visited, &:hover, &:active {
+    text-decoration: none;
+    font-variant: inherit;
+    font-family: inherit;
+  }
+}
+

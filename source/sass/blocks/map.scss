@@ -1,0 +1,49 @@
+
+
+.map__wrapper {
+  margin: 0 auto;
+  position: relative;
+  width: 320px;
+  box-sizing: border-box;
+}
+
+.map__frame {
+  margin: 0 auto;
+  min-width: 320px;
+  width: 100%;
+  height: 200px;
+}
+
+.map__link {
+  display: block;
+  position: absolute;
+  width: 100%;
+}
+
+.map__hide {
+  display: none;
+}
+
+@media (min-width: 768px) {
+
+  .map__wrapper  {
+    width: 660px;
+  }
+
+  .map__frame {
+    height: 374px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .map__wrapper {
+    width: 1200px;
+  }
+
+  .map__frame {
+    height: 502px;
+  }
+}
+
+

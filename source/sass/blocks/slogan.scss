@@ -1,0 +1,60 @@
+.slogan {
+  font-family: $font;
+}
+
+.slogan__wrapper {
+
+  @include wrapper
+}
+
+.slogan__text {
+  padding: 0;
+  font-size:24px;
+  line-height: 29px;
+  font-weight: 300;
+  text-align: center;
+  background-color: $color-white;
+
+  &:nth-of-type(1) {
+    margin-top: 0;
+  }
+
+  &:nth-of-type(2) {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .slogan__wrapper{
+    width: 660px;
+  }
+
+  .slogan__text {
+    margin: 0;
+    font-size: 40px;
+    line-height: 55px;
+
+    &:nth-of-type(2) {
+      margin-bottom: 47px;
+      padding: 0 50px;
+    }
+  }
+ }
+
+@media (min-width: 1200px) {
+
+  .slogan__wrapper {
+    width: 1200px;
+    padding: 0 130px;
+  }
+
+  .slogan__text {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .slogan__text:nth-of-type(2) {
+    padding: 0 150px;
+  }
+}

@@ -1,0 +1,248 @@
+
+.photos {
+  margin: 0 auto;
+  padding-top: 54px;
+  width: 320px;
+  height: 100vh;
+  font-family: $font;
+  color: $color-basic-black;
+}
+
+.photos__title-tablet {
+  display: none;
+}
+
+.photos__title {
+  margin: 0;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $color-basic-black;
+  text-align: center;
+
+  &:nth-of-type(2) {
+    margin-bottom: 60px;
+  }
+}
+
+.photos__first-link {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -120px;
+    right: 20px;
+    width: 140px;
+    height: 36px;
+    background-image: url("../../img/icons/day-view.png");
+  }
+}
+
+.photos__text,
+.photos__caption-text {
+  margin: 0 0 25px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-basic-black;
+}
+
+.photos__post {
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.photos__daily-post {
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.photos__inner-wrapper {
+  display: flex;
+  padding-top: 25px;
+  padding-left: 17px;
+  flex-flow: column wrap;
+  box-sizing: border-box;
+  background-color: $color-grey;
+}
+
+.photos__post-time {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.photos__wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.photos__author {
+  margin: 0 0 14px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  font-weight: 700;
+  color: $color-basic-black
+}
+
+.photos__first-author {
+  padding-top: 5px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $color-basic-black
+}
+
+.photos__link-counter {
+  margin-bottom: 26px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 2em;
+  font-weight: 400;
+  color: $color-red;
+}
+
+.photos__link-counter:before {
+  content: "";
+  width: 13px;
+  height: 12px;
+  padding-left: 18px;
+  background-image: url("../../img/icons/heart.png");
+  background-repeat: no-repeat;
+}
+
+@media(min-width: 768px) {
+
+  .photos {
+    padding-top: 100px;
+    width: 660px;
+  }
+
+  .photos__title {
+    display: none;
+  }
+
+  .photos__title-tablet {
+    margin:0 0 85px;
+    display: block;
+    padding-left: 84px;
+    padding-right: 92px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  .photos__inner-wrapper {
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+
+  .photos__first-wrapper {
+    position: relative;
+  }
+
+  .photos__first-text {
+    padding-right: 38px;
+  }
+
+  .photos__link-counter {
+    position: relative;
+  }
+
+  .photos__link-counter:before {
+    content: "";
+    position: absolute;
+    padding-left: 0;
+    right: 30px;
+  }
+
+  .photos__link-first {
+    position: absolute;
+    top: 32px;
+    right: 55px;
+  }
+
+  .photos__link-first:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+  }
+
+  .photos__wrapper {
+    display: grid;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .photos__post {
+    margin-bottom: 0;
+  }
+
+  .photos__short-1,
+  .photos__short-2 {
+    margin-bottom: 50px;
+  }
+
+  .photos__first-link:before {
+    top:-430px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .photos {
+    width: 1200px;
+  }
+
+  .photos__title-tablet {
+    display: none;
+  }
+
+  .photos__title {
+    display: block;
+    padding: 0 314px;
+    font-size: 18px;
+  }
+
+  .photos__even-2 {
+    padding-bottom: 25px;
+  }
+
+  .photos__daily-post {
+    padding: 0 130px;
+  }
+
+  .photos__daily-post:before {
+    top: 54px;
+    right: 130px;
+  }
+
+  .photos__wrapper {
+    row-gap: 50px;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0 130px;
+  }
+
+  .photos__inner-wrapper {
+    padding-left: 27px;
+  }
+
+  .photos__short-2 {
+    margin-bottom: 25px;
+  }
+}
