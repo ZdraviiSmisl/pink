@@ -1,9 +1,7 @@
 
 .downloads {
   margin: 0 auto 46px auto;
-  /*
   width: 100%;
-  */
   font-family: "Open Sans", "arial", sans-serif;
 }
 
@@ -161,7 +159,9 @@ color: $color-red-thirty;
   }
 
   .downloads__wrapper {
+    /*
     padding: 0 130px;
+    */
     width: 100%;
   }
 

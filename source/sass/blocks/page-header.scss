@@ -1,7 +1,5 @@
 .page-header {
-  /*
   position: absolute;
-  */
   width: 100%;
   min-width: 280px;
   background-color: $color-black-transparent;
@@ -117,7 +115,7 @@
   opacity: 0.3;
 }
 
-/*.page-checkbox:checked ~ .page-header__wrapper .page-nav__toggle .page-nav__menu {
+.page-checkbox:checked ~ .page-header__wrapper .page-nav__toggle .page-nav__menu {
   transform: rotate(45deg);
   width: 30px;
 }
@@ -130,7 +128,7 @@
 .page-checkbox:checked ~ .page-header__wrapper .page-nav__toggle .page-nav__menu::after {
   top: 0;
   transform: rotate(90deg);
-}*/
+}
 
 .page-nav__list {
   margin: 0;

@@ -1,9 +1,12 @@
 .tariffs {
   margin: 0 auto;
   position: relative;
-  width: 320px;
+  width: 100%;
+  min-width: 280px;
   font-family: $font;
   text-transform: uppercase;
+  background-color: $color-grey;
+
 
   &:before {
     content: "";
@@ -24,7 +27,6 @@
   padding-top: 83px;
   padding-bottom: 49px;
   overflow: hidden ;
-  background-color: $color-grey;
 
 }
 
@@ -263,10 +265,13 @@
   }
 
 @media (min-width: 1200px) {
+  .tariffs {
+    width: 1200px;
+  }
 
   .tariffs__wrapper {
     padding: 0 130px;
-    width: 1200px;
+
   }
 
   .tariffs__th {

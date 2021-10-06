@@ -17,11 +17,5 @@
   $color-green: #2aab6d;
   $color-extra-grey: #c5c5c5;
   $font: "Open Sans", "arial", sans-serif;
-  $mobile-width: 320px;
-  $tablet-width: 768px;
-  $desktop-width: 1200px;
-  $header-min-height: 66px;
 
-@media (min-width:  $tablet-width) {
-  $header-min-height: 110px;
-}
+
