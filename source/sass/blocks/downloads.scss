@@ -2,11 +2,14 @@
 .downloads {
   margin: 0 auto 46px auto;
   width: 100%;
-  font-family: "Open Sans", "arial", sans-serif;
+
 }
 
 .downloads__background {
   position: relative;
+  background-image: url("../../img/background/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 106px, 50% -70px;
 }
 
 .downloads__image {

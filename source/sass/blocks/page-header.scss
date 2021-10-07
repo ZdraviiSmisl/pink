@@ -1,5 +1,6 @@
 .page-header {
-  position: absolute;
+
+  margin-bottom: -69px;
   width: 100%;
   min-width: 280px;
   background-color: $color-black-transparent;
@@ -11,13 +12,13 @@
 }
 
 .page-header__wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-height: 69px;
   width: 100%;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 
   @include wrapper;
 }
@@ -27,7 +28,10 @@
   border-bottom: 1px solid $color-original-black;
 }
 
-.page-checkbox:checked ~ .page-nav {
+.page-checkbox:checked ~ .page-header__wrapper  .page-nav {
+  position: absolute;
+  top: 70px;
+  left: 0;
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -35,7 +39,7 @@
   background-color: $color-basic-black;
 }
 
-.page-checkbox:not(:checked) ~ .page-nav {
+.page-checkbox:not(:checked) ~.page-header__wrapper  .page-nav {
   display: none;
 }
 
@@ -169,10 +173,18 @@
 }
 
 @media (min-width: 768px) {
+
+  .page-header {
+    margin-bottom: -110px;
+  }
+
   .page-header__wrapper {
-    max-height: 110px;
     padding-bottom: 27px;
     padding-top: 27px;
+  }
+
+  .page-checkbox:checked ~ .page-header__wrapper  .page-nav {
+    top: 110px;
   }
 
   .page__tablet {
@@ -187,13 +199,28 @@
 }
 
 @media (min-width: 1200px) {
+
   .page-checkbox:not(:checked) ~ .page-header__wrapper,
   .page-checkbox:checked ~ .page-header__wrapper {
+
+    display: flex;
+    align-items: baseline;
     padding: 0 130px;
-    background-color: $color-black-transparent;
+    box-sizing: border-box;
+    width: 1200px;
     border: none;
-    box-shadow: none;
+    background-color: transparent;
   }
+
+  .page-checkbox:checked ~ .page-header__wrapper  .page-nav,
+  .page-checkbox:not(:checked) ~ .page-header__wrapper .page-nav {
+
+    position: static;
+    display: block;
+    padding-left: 173px;
+    background-color: transparent;
+
+    }
 
   .page__tablet {
     display: none;
@@ -204,14 +231,10 @@
     transform: translateY(27px);
   }
 
-  .page-checkbox:checked ~ .page-nav,
-  .page-checkbox:not(:checked) ~ .page-nav {
-    margin: 0 auto;
-    display: block;
-    width: 940px;
-    background-color: transparent;
-    transform: translate(280px, 0);
+  .page-nav {
+    transform: translateY(20px);
   }
+
 
   .page-nav__toggle {
     display: none;
@@ -220,8 +243,9 @@
   .page-nav__list {
     display: flex;
     flex-flow: row wrap;
+    justify-content: flex-start;
+    column-gap: 79px;
     align-items: center;
-    flex: 1 0 auto;
   }
 
   .page-nav__item {
@@ -241,7 +265,6 @@
   }
 
   .page-nav__link {
-    padding: 0 40px;
     font-weight: 400;
     text-transform: none;
     border: none;
