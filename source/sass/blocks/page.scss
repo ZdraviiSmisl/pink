@@ -1,5 +1,6 @@
 .page {
   min-height: 100%;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .page__body {
@@ -8,7 +9,6 @@
   grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr min-content;
   min-height: 100vh;
-  font-family: "Open Sans", "arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
 }
