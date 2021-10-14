@@ -6,7 +6,6 @@
   text-transform: uppercase;
   background-color: $color-grey;
 
-
   &:before {
     content: "";
     position: absolute;
@@ -17,13 +16,12 @@
     background-color: $color-grey;
     clip-path: polygon(100% 0,100% 18px,0 18px);
   }
-
 }
 
 .tariffs__wrapper {
   margin-bottom: 50px;
   position: relative;
-  padding-top: 83px;
+  padding-top: 86px;
   padding-bottom: 49px;
   overflow: hidden ;
 
@@ -104,7 +102,7 @@
 .tariffs__th-hit:before {
   content: "";
   position: absolute;
-  top:-5px;
+  top:-2px;
   left: 20px;
   width: 74px;
   height: 74px;

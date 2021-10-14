@@ -3,9 +3,6 @@
   margin-bottom: 46px;
   display: grid;
   position: relative;
-  /*
-  width: 100%;
-  */
   padding-top: 66px;
   background-color: $color-blue;
   background-image: url("../../img/background/phone-mobile@1x.png"), url("../../img/background/back-mobile.jpg");
@@ -24,7 +21,7 @@
 
 .downloads__title--mobile {
   display: block;
-  padding: 0 15px 0 25px;
+  padding: 0 15px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 300;
@@ -46,8 +43,8 @@
 }
 
 .downloads__link {
-  display: inline-block;
-  margin-bottom: 38px;
+  display: block;
+  margin-bottom: 20px;
   padding: 16px 35px;
   font-size: 18px;
   line-height: 18px;
@@ -56,6 +53,7 @@
   cursor: pointer;
   border: 3px solid $color-white;
   border-radius: 40px;
+  transform: translateY(-15px);
 
   @include link-unstyled
 }
@@ -165,19 +163,16 @@ color: $color-red-thirty;
   }
 
   .downloads__buttons-block {
-    margin: 160px 0 0 0;
-    width: 1200px;
   }
 
   .downloads__wrapper {
-    padding: 0 130px;
+    width: 1200px;
+    padding: 0 0 0 230px;
   }
 
 
   .downloads__title--tablet {
-    transform: translateX(-30px);
     margin: 0 0 41px 0;
-    padding-left: 0;
     font-size: 50px;
     line-height: 68px;
   }
@@ -188,7 +183,4 @@ color: $color-red-thirty;
     font-size: 21px;
   }
 
-  .downloads__text {
-
-  }
 }

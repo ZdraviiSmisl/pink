@@ -23,7 +23,7 @@
 }
 
 .reviews__text {
-  margin: 0 0 44px;
+  margin: 0 0 19px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -37,7 +37,7 @@
 
 .reviews__author-name {
   order: 1;
-  margin-bottom: 31px;
+  margin-bottom: 14px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -46,6 +46,7 @@
 .reviews__toggles {
   order: 4;
   margin-bottom: 10px;
+  padding-left: 9px;
 
     &:hover .reviews__toggle {
       background-color: $black-60;
@@ -57,7 +58,7 @@
 }
 
 .reviews__toggle {
-  margin-right: 19px;
+  margin-right: 12px;
   padding: 3px;
   background-color: $black-transparent;
   border:none;
@@ -70,7 +71,6 @@
     }
 
     &:nth-of-type(3) {
-      margin-right: 0;
   }
 }
 
