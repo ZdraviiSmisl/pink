@@ -19,7 +19,7 @@
 }
 
 .tariffs__wrapper {
-  margin-bottom: 50px;
+  margin-bottom: 38px;
   position: relative;
   padding-top: 86px;
   padding-bottom: 49px;
@@ -146,7 +146,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 45px;
+  padding-top: 49px;
 
   &:hover .tariffs__lb {
     background-color: $black-60;
@@ -158,7 +158,7 @@
 }
 
 .tariffs__lb {
-  margin-right: 19px;
+  margin-right: 16px;
   display: block;
   width: 6px;
   height: 6px;
@@ -177,15 +177,12 @@
   border: 3px solid $color-basic-black;
 }
 
-@media (min-width: 768px) {
-  .tariffs {
-    margin: 0 auto;
-    width: 660px;
-
-  }
+@media (min-width: 660px) {
 
   .tariffs__wrapper {
+    margin: 0 auto;
     padding: 0 20px;
+    width: 660px;
   }
 
   .tariffs__tbody {

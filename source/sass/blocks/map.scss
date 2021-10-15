@@ -1,10 +1,23 @@
-
+.map {
+  margin-bottom: 31px;
+}
 
 .map__wrapper {
   margin: 0 auto;
   position: relative;
-  width: 320px;
   box-sizing: border-box;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 33px;
+    background-color: $color-white;
+    clip-path: polygon(50% 33px, 0 0, 100% 0);
+    z-index: 4;
+  }
 }
 
 .map__frame {
@@ -12,6 +25,7 @@
   min-width: 320px;
   width: 100%;
   height: 200px;
+  border: 0 transparent;
 }
 
 .map__link {
@@ -24,11 +38,7 @@
   display: none;
 }
 
-@media (min-width: 768px) {
-
-  .map__wrapper  {
-    width: 660px;
-  }
+@media (min-width: 660px) {
 
   .map__frame {
     height: 374px;
@@ -36,10 +46,6 @@
 }
 
 @media (min-width: 1200px) {
-
-  .map__wrapper {
-    width: 1200px;
-  }
 
   .map__frame {
     height: 502px;
