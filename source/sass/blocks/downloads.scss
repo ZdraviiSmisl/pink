@@ -94,7 +94,7 @@ color: $color-red-thirty;
 @media (min-width: 660px) {
 
   .downloads--index {
-    margin-bottom: 58px;
+    margin-bottom: 52px;
     position: relative;
     background-image: url("../../img/background/phone-tablet@1x.png"),url("../../img/background/back-tablet.jpg");
     background-position: center top 184px,center top 4px;
@@ -121,8 +121,8 @@ color: $color-red-thirty;
   }
 
   .downloads__title--tablet {
-    margin-bottom: 30px;
-    padding: 0 366px 0 0;
+    margin-bottom: 45px;
+    padding: 0 400px 0 45px;
     display: inline-block;
     text-align: center;
     font-size: 40px;
@@ -132,13 +132,13 @@ color: $color-red-thirty;
   }
 
   .downloads__link {
-    margin-bottom: 51px;
-    padding: 15px 54px;
+    margin-bottom: 33px;
+    padding: 15px 45px;
   }
 
   .downloads__list {
     margin-bottom: 18px;
-    padding-left: 20px;
+    padding-left: 29px;
     justify-content: flex-start;
   }
 

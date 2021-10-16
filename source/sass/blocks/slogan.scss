@@ -1,4 +1,16 @@
+.slogan {
+  position: relative;
 
+  &:after {
+    content: "";
+    position: absolute;
+    padding-top: calc(100% / 12);
+    height: 0;
+    width: 100%;
+    background: hsl(0, 0%, 100%) url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 100 1200 0v100H0Z' fill='%23F2F2F2'/%3E%3C/svg%3E") no-repeat center / cover;
+  }
+
+}
 .slogan__wrapper {
 
   @include wrapper
@@ -14,7 +26,6 @@
 
   &:nth-of-type(1) {
     margin-top: 0;
-    margin-bottom: 28px;
   }
 
   &:nth-of-type(2) {
@@ -34,7 +45,7 @@
     line-height: 55px;
 
     &:nth-of-type(2) {
-      margin-bottom: 47px;
+      margin-bottom: 29px;
       padding: 0 50px;
     }
   }
@@ -43,6 +54,7 @@
 @media (min-width: 1200px) {
 
   .slogan__wrapper {
+    margin-bottom: -5px;
     width: 1200px;
     padding: 0 130px;
   }

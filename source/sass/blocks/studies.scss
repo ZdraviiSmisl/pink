@@ -2,6 +2,7 @@
 .studies {
   margin-bottom: 109px;
   display: none;
+  font-weight: 400;
 }
 
 .studies__wrapper {
@@ -10,7 +11,6 @@
 }
 
 .studies__link {
-  font-weight: 400;
   color: red;
 }
 
@@ -26,10 +26,6 @@
   font-weight: 700;
 }
 
-.studies__text {
-  font-weight: 400;
-}
-
 @media (min-width: 660px) {
 
   .studies {
@@ -40,6 +36,16 @@
     display: flex;
     align-items: center;
     width: 660px;
+
+    &:before {
+      content: "";
+      background-image: url("../../img/sprite.svg#clock__tablet");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 236px;
+      height: 276px;
+    }
   }
 
   .studies__timer {
@@ -60,6 +66,15 @@
   .studies__wrapper {
     width:1200px ;
     padding:0 130px;
+
+    &:before {
+      content: "";
+      background-image: url("../../img/sprite.svg#clock__desktop");
+      background-repeat: no-repeat;
+      background-position: center/cover;
+      width: 298px;
+      height: 345px;
+    }
   }
 
  .studies__info {
@@ -80,5 +95,4 @@
     font-size: 18px;
     line-height: 30px;
   }
-
 }
