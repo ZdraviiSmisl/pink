@@ -1,7 +1,5 @@
 .tariffs {
-  margin: 0 auto;
   position: relative;
-  width: 100%;
   min-width: 280px;
   text-transform: uppercase;
   background-color: $color-grey;
@@ -23,8 +21,8 @@
   position: relative;
   padding-top: 86px;
   padding-bottom: 49px;
+  box-sizing: border-box;
   overflow: hidden ;
-
 }
 
 .tariffs__radio {
@@ -179,9 +177,19 @@
 
 @media (min-width: 660px) {
 
+  .tariffs {
+    margin-bottom: 45px;
+    padding-top: 57px;
+
+    &:before {
+      top: -106px;
+      height: 106px;
+      clip-path: polygon(100% 116px,0px 106px,100% 57px);
+    }
+  }
+
   .tariffs__wrapper {
-    margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 20px 30px 20px;
     width: 660px;
   }
 
@@ -229,7 +237,8 @@
   }
 
   .tariffs__th {
-    max-height: 75px;
+    max-height: 77px;
+    border-top: 1px;
 
     &:nth-of-type(1) {
       display: block;
@@ -247,6 +256,7 @@
 
   .tariffs__th-hit:before {
     left: 0;
+    top: 0;
     width: 61px;
     height: 61px;
     background-image: url("../../img/icons/hit-tablet.png");
@@ -255,6 +265,10 @@
   .tariffs__service {
     display: none;
     font-size: 18px;
+  }
+
+  .tariffs__toggles {
+    display: none;
   }
   }
 

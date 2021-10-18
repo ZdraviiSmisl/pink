@@ -78,9 +78,10 @@
   display: none;
 }
 
-  @media (min-width: 768px) {
+  @media (min-width: 660px) {
 
     .reviews {
+      margin-bottom: 57px;
       padding: 0;
     }
 
@@ -89,22 +90,24 @@
     }
 
     .reviews__text {
-      margin-bottom: 51px;
+      margin-bottom: 35px;
       font-size: 18px;
       order: 1;
     }
 
     .reviews__author-name {
       order: 2;
-      margin-bottom: 17px;
+      font-size: 20px;
+      margin-bottom: 2px;
     }
 
     .reviews__author-info {
-      margin: 0 0 49px 0;
+      margin: 0 0 28px 0;
       display: block;
     }
 
     .reviews__toggles {
+      margin: 0;
       padding-bottom: 0;
     }
   }

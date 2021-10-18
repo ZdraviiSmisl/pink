@@ -43,6 +43,13 @@
   .map__frame {
     height: 374px;
   }
+
+  .map__wrapper {
+    
+    &:before {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: 1200px) {

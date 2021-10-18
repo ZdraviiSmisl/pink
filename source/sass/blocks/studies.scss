@@ -1,6 +1,6 @@
 
 .studies {
-  margin-bottom: 109px;
+  margin-bottom: 58px;
   display: none;
   font-weight: 400;
 }
@@ -33,31 +33,28 @@
   }
 
   .studies__wrapper {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     width: 660px;
 
     &:before {
       content: "";
-      background-image: url("../../img/sprite.svg#clock__tablet");
+      width: 236px;
+      height: 276px;
+      background-image: url("../../img/icons/clock-tablet.svg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      width: 236px;
-      height: 276px;
+      transform: translateY(-43px);
     }
   }
 
-  .studies__timer {
-    padding-right: 72px;
-  }
-
   .studies__item {
-    margin-bottom: 24px;
+    margin-bottom: 9px;
   }
 
   .studies__text {
-    margin-right: 12px;
+    margin: 0 12px 10px 0;
   }
 }
 
@@ -68,10 +65,6 @@
     padding:0 130px;
 
     &:before {
-      content: "";
-      background-image: url("../../img/sprite.svg#clock__desktop");
-      background-repeat: no-repeat;
-      background-position: center/cover;
       width: 298px;
       height: 345px;
     }
