@@ -120,6 +120,10 @@
   opacity: 0.3;
 }
 
+.page-checkbox:checked ~.page-header__wrapper .page-nav__toggle{
+  width: 27px;
+}
+
 .page-checkbox:checked ~ .page-header__wrapper .page-nav__toggle .page-nav__menu {
   transform: rotate(45deg);
   width: 30px;

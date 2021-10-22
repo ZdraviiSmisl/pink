@@ -40,14 +40,19 @@
 
 @media (min-width: 660px) {
 
+  .map {
+    margin-bottom: 22px;
+  }
+
   .map__frame {
     height: 374px;
   }
 
   .map__wrapper {
-    
+
     &:before {
-      display: none;
+      height: 70px;
+      clip-path: polygon(50% 70px, 0 0, 100% 0);
     }
   }
 }

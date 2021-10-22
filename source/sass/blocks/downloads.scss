@@ -28,7 +28,7 @@
   color: $color-white;
   text-align: center;
   text-decoration: none;
-  transform: translateY(-360px);
+  transform: translateY(23px);
 }
 
 .downloads__buttons-block {
@@ -40,13 +40,13 @@
   width: 320px;
   text-align: center;
 
-  @include wrapper
+  @include wrapper();
 }
 
 .downloads__link {
   display: inline-block;
   margin-bottom: 20px;
-  padding: 16px 44px;
+  padding: 16px 35px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -132,7 +132,7 @@ color: $color-red-thirty;
 
   .downloads__link {
     margin-bottom: 33px;
-    padding: 15px 63px 15px 45px;
+    padding: 15px 45px;
   }
 
   .downloads__list {
@@ -154,7 +154,7 @@ color: $color-red-thirty;
 
   .downloads--index {
     background-image: url("../../img/background/phone-desktop@1x.png"), url("../../img/background/back-desktop.jpg");
-    background-position: 77% bottom, 0 63%;
+    background-position: 97% bottom, 50% 0;
     background-size: 1050px,cover;
 
     @media (min-resolution: 2dppx) {
@@ -168,7 +168,8 @@ color: $color-red-thirty;
 
   .downloads__wrapper {
     width: 1200px;
-    padding: 0 0 0 230px;
+    padding: 0 130px;
+    box-sizing: border-box;
   }
 
   .downloads__title--tablet {
