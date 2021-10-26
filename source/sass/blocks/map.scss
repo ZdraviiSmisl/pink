@@ -59,9 +59,19 @@
 
 @media (min-width: 1200px) {
 
+  .map {
+    margin-bottom: 71px;
+  }
+
   .map__frame {
     height: 502px;
   }
+
+  .map__wrapper {
+
+    &:before {
+      height: 112px;
+      clip-path: polygon(50% 112px, 0 0, 100% 0);
+    }
+  }
 }
-
-

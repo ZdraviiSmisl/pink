@@ -100,9 +100,11 @@
 
 @media (min-width: 1200px) {
 
+  .advantages {
+    margin-bottom: -28px;
+  }
+
   .advantages__wrapper {
-    padding-right: 130px;
-    padding-left: 113px;
     width: 1200px;
   }
 
@@ -110,50 +112,67 @@
     display: none;
   }
 
+  .advantages__box {
+    padding: 0;
+    margin: 0;
+  }
+
   .advantages__box--desktop {
+    margin: 0 0 65px 0;
     display: block;
+    padding: 0;
+    transform: translateY(16px);
   }
 
   .advantages__list {
+    padding: 0 130px 59px 107px;
+    margin: 0;
     display: flex;
     justify-content: space-between;
   }
 
   .advantages__item {
+    padding: 0;
     position: relative;
-    padding:0 68px 0 0;
     text-align: center;
+
+    &:nth-of-type(2) {
+      padding-right: 21px;
+    }
   }
 
   .advantages__item:before {
     content: "";
     position: absolute;
-    top: 301px;
-    left: -15px;
+    top: 304px;
+    left: 0;
     width: 308px;
     height: 25px;
     background-image: url("./../../img/background/shadow-phone.png");
   }
 
   .advantages__item--3 {
-    padding:0;
-  }
-
-  .advantages__box {
-    padding-bottom: 59px;
+    padding: 0;
+    margin: 0;
   }
 
   .advantages__title {
+    margin: 0 0 24px 0;
+    padding: 0 28px;
     font-size: 30px;
     line-height: 30px;
+    text-align: center;
   }
 
   .advantages__text {
+    margin: 0;
+    padding: 0 16px;
     font-size: 18px;
     line-height: 30px;
+    text-align: center;
   }
 
   .advantages__text--2 {
-    padding: 0 10px;
+    padding: 0 38px;
   }
 }

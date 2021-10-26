@@ -60,27 +60,32 @@
 
 @media (min-width: 1200px) {
 
+  .studies {
+    background-color: $color-grey;
+  }
+
   .studies__wrapper {
     width:1200px ;
-    padding:0 130px;
+    padding: 108px 130px 0 130px;
+    grid-template-columns: repeat(2,auto);
+    gap: 200px;
 
     &:before {
       width: 298px;
       height: 345px;
+      transform: translate(133px,-66px);
     }
   }
 
- .studies__info {
-    padding-right: 30px;
-}
-
   .studies__title {
-    margin-bottom: 37px;;
+    margin-bottom: 25px;
+    padding-top: 26px;
     line-height: 30px;
   }
 
   .studies__text {
-    margin-bottom: 47px;
+    padding-right: 120px;
+    margin: 0 0 30px;
   }
 
   .studies__text,

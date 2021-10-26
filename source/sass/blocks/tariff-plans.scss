@@ -273,11 +273,20 @@
   }
 
 @media (min-width: 1200px) {
+
   .tariffs {
-    width: 1200px;
-  }
+    padding-bottom: 103px;
+
+    &:before {
+      top: -111px;
+      height: 140px;
+      clip-path: polygon(100% 136px,0 110px,100% 6px);
+    }
+    }
 
   .tariffs__wrapper {
+    margin: 0 auto;
+    width: 1200px;
     padding: 0 130px;
 
   }
