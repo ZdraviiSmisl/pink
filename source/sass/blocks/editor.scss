@@ -16,9 +16,6 @@
 }
 }
 
-.editor {
-}
-
 .editor__toggle {
   display: none;
 }
@@ -113,7 +110,7 @@
   margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 660px) {
 
   .editor {
     margin: 0 auto;

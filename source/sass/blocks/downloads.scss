@@ -1,4 +1,9 @@
 
+.downloads  {
+background-image: url("../../img/background/back-mobile.jpg");
+}
+
+
 .downloads--index{
   margin-bottom: 46px;
   display: grid;
@@ -13,6 +18,11 @@
     background-image: url("../../img/background/phone-mobile@2x.png"), url("../../img/background/back-mobile@2x.jpg");
     background-size: contain;
   }
+}
+
+.downloads--catalog {
+
+  background-image: url("../../img/background/back-mobile.jpg");
 }
 
 .downloads__title {
