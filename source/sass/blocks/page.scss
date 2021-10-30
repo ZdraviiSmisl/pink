@@ -12,3 +12,22 @@
   font-size: 14px;
   line-height: 24px;
 }
+
+.page__corrector {
+  margin: 0 auto;
+  width: 280px;
+
+  @media (max-width: 659.5px) {
+    &--except-mobile {
+      display: contents;
+    }
+  }
+
+  @media (min-width: 660px) {
+    width: 620px;
+  }
+
+  @media (min-width: 980px) {
+    width: 940px;
+  }
+}

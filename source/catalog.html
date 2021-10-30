@@ -11,9 +11,9 @@
     <link crossorigin="use-credentials" rel="manifest" href="/manifest.webmanifest">
   </head>
   <body class="page__body">
-  <header class="page-header">
+  <header class="page-header-catalog">
     <input class="page-checkbox" type="checkbox" id="mobileMenuOpened" checked>
-    <div class="page-header__wrapper">
+    <div class="page-header__wrapper page__corrector">
       <a class="page-header__logo">
         <span class="visually-hidden">PINK</span>
         <svg class="page__logo-img page__desktop" width="147" height="40"  xmlns="http://www.w3.org/2000/svg" role="img">
@@ -57,10 +57,10 @@
   </header>
 
   <main class="main-catalog">
+    <h1 class="visually-hidden">Pink-приложение-редактор фотографий</h1>
     <section class="downloads downloads--catalog">
-      <h2 class="visually-hidden">Загрузка приложения на разные платформы</h2>
       <div class="downloads__wrapper">
-        </div>
+        <h2 class="downloads__title downloads__title--photo">Фотографии пользователей</h2>
       </div>
     </section>
     <section class="photos">
@@ -70,7 +70,7 @@
       <h2 class="visually-hidden">Галерея</h2>
       <a class="photos__first-link link" href="#" aria-label="переход к полноразмерному изображению">
         <picture>
-          <source srcset="img/photos/panorama-desktop.jpg" media="(min-width: 1200px)">
+          <source srcset="img/photos/panorama-desktop.jpg" media="(min-width: 980px)">
           <source srcset="img/photos/panorama-tablet.jpg" media="(min-width: 660px)">
           <img class="photos__main-img" src="img/photos/panorama-mobile.jpg" alt="фото моста в горах">
         </picture>
@@ -87,7 +87,7 @@
         <article class="photos__post photos__car">
           <a class="photos__link--size-m link" href="#" aria-label="переход к полноразмерному изображению">
             <picture>
-              <source srcset="img/photos/photo-1-desktop.jpg" media="(min-width: 1200px)">
+              <source srcset="img/photos/photo-1-desktop.jpg" media="(min-width: 980px)">
               <source srcset="img/photos/photo-1-tablet.jpg" media="(min-width: 660px)">
               <img class="photos__img" src="img/photos/photo-1-mobile.jpg" alt="Фото белого автомобиля на съёмках">
             </picture>
@@ -102,7 +102,7 @@
         <article class="photos__post photos__drum">
           <a class="photos__link--size-m link" href="#" aria-label="переход к полноразмерному изображению">
             <picture>
-              <source srcset="img/photos/photo-2-desktop.jpg" media="(min-width: 1200px)">
+              <source srcset="img/photos/photo-2-desktop.jpg" media="(min-width: 980px)">
               <source srcset="img/photos/photo-2-tablet.jpg" media="(min-width: 660px)">
               <img class="photos__img" src="img/photos/photo-2-mobile.jpg" alt="Фото белого автомобиля на съёмках">
             </picture>
@@ -118,7 +118,7 @@
         <article class="photos__post photos__window">
           <a class="photos__link--size-m link" href="#" aria-label="переход к полноразмерному изображению">
             <picture>
-              <source srcset="img/photos/photo-3-desktop.jpg" media="(min-width: 1200px)">
+              <source srcset="img/photos/photo-3-desktop.jpg" media="(min-width: 980px)">
               <source srcset="img/photos/photo-3-tablet.jpg" media="(min-width: 660px)">
               <img class="photos__img" src="img/photos/photo-3-mobile.jpg" alt="Фото белого автомобиля на съёмках">
             </picture>
@@ -134,7 +134,7 @@
         <article class="photos__post photos__shop">
           <a class="photos__link--size-m link" href="#" aria-label="переход к полноразмерному изображению">
             <picture>
-              <source srcset="img/photos/photo-4-desktop.jpg" media="(min-width: 1200px)">
+              <source srcset="img/photos/photo-4-desktop.jpg" media="(min-width: 980px)">
               <source srcset="img/photos/photo-4-tablet.jpg" media="(min-width: 660px)">
               <img class="photos__img" src="img/photos/photo-4-mobile.jpg" alt="Фото белого автомобиля на съёмках">
             </picture>
@@ -150,7 +150,7 @@
         <article class="photos__post photos__mountains">
           <a class="photos__link--size-m link" href="#" aria-label="переход к полноразмерному изображению">
             <picture>
-              <source srcset="img/photos/photo-5-desktop.jpg" media="(min-width: 1200px)">
+              <source srcset="img/photos/photo-5-desktop.jpg" media="(min-width: 980px)">
               <source srcset="img/photos/photo-5-tablet.jpg" media="(min-width: 660px)">
               <img class="photos__img" src="img/photos/photo-5-mobile.jpg" alt="Фото белого автомобиля на съёмках">
             </picture>
@@ -165,7 +165,7 @@
         <article class="photos__post photos__airplane">
           <a class="photos__link--size-m link" href="#" aria-label="переход к полноразмерному изображению">
             <picture>
-              <source srcset="img/photos/photo-6-desktop.jpg" media="(min-width: 1200px)">
+              <source srcset="img/photos/photo-6-desktop.jpg" media="(min-width: 980px)">
               <source srcset="img/photos/photo-6-tablet.jpg" media="(min-width: 660px)">
               <img class="photos__img" src="img/photos/photo-6-mobile.jpg" alt="Фото белого автомобиля на съёмках">
             </picture>
@@ -189,7 +189,7 @@
             <fieldset class="editor__field-img editor__field">
               <a class="editor__link" href="#" aria-label="редактируемое изображение">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photos/photo-7-tablet.jpg">
+                  <source media="(min-width: 980px)" srcset="img/photos/photo-7-tablet.jpg">
                   <source media="(min-width: 660px)" srcset="img/photos/photo-7-tablet.jpg">
                   <img class="editor__img" src="img/photos/photo-7-mobile.jpg" alt="Зимняя дорога">
                 </picture>
@@ -224,21 +224,21 @@
                 <div class="editor__toggle editor__toggle-crop" aria-label="регулятор">
                   <input class="editor__slider" type="range" min="1" max="100" value="90">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/icons/crop-mobile.svg">
+                    <source media="(min-width: 980px)" srcset="img/icons/crop-mobile.svg">
                     <img class="editor__slider-img" src="img/icons/crop-tablet.svg" alt="">
                   </picture>
                 </div>
                 <div class="editor__toggle editor__toggle-fill" aria-label="регулятор">
                   <input class="editor__slider" type="range" min="1" max="100" value="10">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/icons/fill-mobile.svg">
+                    <source media="(min-width: 980px)" srcset="img/icons/fill-mobile.svg">
                     <img class="editor__slider-img" src="img/icons/fill-tablet.svg" alt="">
                   </picture>
                 </div>
                 <div class="editor__toggle editor__toggle-contrast" aria-label="регулятор">
                   <input class="editor__slider" type="range" min="1" max="100" value="50">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/icons/contrast-mobile.svg">
+                    <source media="(min-width: 980px)" srcset="img/icons/contrast-mobile.svg">
                     <img class="editor__slider-img" src="img/icons/contrast-tablet.svg" alt="">
                   </picture>
                 </div>
@@ -260,7 +260,7 @@
       <div class="footer__part footer__logo">
         <span class="visually-hidden">PINK</span>
         <picture>
-          <source srcset="img/icons/logotype-blue-desktop.svg" media="(min-width: 1200px)">
+          <source srcset="img/icons/logotype-blue-desktop.svg" media="(min-width: 980px)">
           <source srcset="img/icons/logotype-blue-tablet.svg" media="(min-width: 768px)">
           <img src="img/icons/logotype-blue-tablet.svg" alt="Логотип сайта pink">
         </picture>
