@@ -57,6 +57,7 @@
     grid-template-columns: repeat(3,auto) ;
     grid-template-rows:repeat(1,1fr) ;
     width: 660px;
+    padding-bottom: 40px;
   }
 
   .footer__part {
@@ -67,8 +68,6 @@
     padding-top: 6px;
     padding-right: 14px;
   }
-
-
 }
 
 @media (min-width: 1200px) {

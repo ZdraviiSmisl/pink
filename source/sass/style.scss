@@ -9,11 +9,11 @@
 @import "global/visually-hidden.scss";
 
 //Blocks
-
+@import "blocks/catalog-nav.scss";
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/downloads.scss";
-@import "blocks/downloads-cotalog.scss";
+@import "blocks/downloads-catalog.scss";
 @import "blocks/slogan.scss";
 @import "blocks/advantages.scss";
 @import "blocks/reviews.scss";
@@ -22,7 +22,7 @@
 @import "blocks/footer.scss";
 @import "blocks/studies.scss";
 @import "blocks/map.scss";
-@import "blocks/page-header-catalog";
+@import "blocks/header-catalog.scss";
 @import "blocks/header-form.scss";
 @import "blocks/form.scss";
 @import "blocks/editor.scss";
