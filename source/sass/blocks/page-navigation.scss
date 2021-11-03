@@ -1,0 +1,46 @@
+.page-navigation {
+  margin: 0;
+  position: relative;
+  width: auto;
+  padding-top: 66px;
+  background-color: $color-basic-black;
+  box-shadow:
+    30vw 0 0 0 $color-basic-black,
+    -30vw 0 0 0 $color-basic-black;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $color-original-black;
+
+
+
+  }
+  }
+
+
+.page-navigation__list {
+
+  @include list-unstyled;
+}
+
+.page-navigation__link {
+
+  color: $color-white;
+
+  @include link-unstyled;
+}
+
+@media (min-width: 660px) {
+
+}
+
+@media (min-width: 980px) {
+  .page-navigation {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+}
