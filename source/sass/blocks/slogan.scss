@@ -12,8 +12,10 @@
 
 }
 .slogan__wrapper {
-
-  @include wrapper
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 
 .slogan__text {
@@ -63,6 +65,7 @@
     margin-bottom: -5px;
     width: 1200px;
     padding: 0 130px;
+    box-sizing: content-box;
   }
 
   .slogan__text {

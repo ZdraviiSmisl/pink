@@ -53,8 +53,9 @@
 }
 
 .downloads__link {
+  list-style: none;
   display: inline-block;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   padding: 16px 35px;
   font-size: 18px;
   line-height: 18px;
@@ -64,8 +65,7 @@
   border: 3px solid $color-white;
   border-radius: 50px;
   transform: translateY(-15px);
-
-  @include link-unstyled
+ /* @include link-unstyled*/
 }
 
 .downloads__link:hover {

@@ -1,0 +1,52 @@
+.logo {
+  display: grid;
+  max-width: max-content;
+  padding-top: 20px;
+}
+
+.logo__wrapper {
+  height: 23px;
+
+  &--desktop {
+      display: none;
+  }
+
+  &--mobile {
+      display: grid;
+      place-items: left;
+  }
+}
+
+@media (min-width: 660px) {
+
+  .logo__wrapper {
+    height: 56px;
+
+    &--tablet {
+      display: grid;
+      place-items: left;
+    }
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  .logo__image-footer {
+      padding: 0;
+    }
+}
+
+@media (min-width: 980px) {
+
+  .logo__wrapper {
+
+    &--desktop {
+      display: block;
+    }
+
+    &--tablet {
+      display: none;
+    }
+  }
+}
