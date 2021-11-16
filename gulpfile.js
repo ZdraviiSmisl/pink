@@ -87,7 +87,7 @@ exports.images = copyImages;
 
 // Webp
 
-const createWebp=()=>{
+const createWebp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("build/img"))
@@ -98,7 +98,7 @@ exports.createWebp = createWebp;
 //Sprites
 
 const sprite = () => {
-  return gulp.src("source/img/**/*.svg")
+  return gulp.src("source/img/icons/*.svg")
     .pipe(svgSprite({
       mode: {
         stack: {
@@ -107,7 +107,7 @@ const sprite = () => {
       },
     }
     ))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("build/img/icons"));
 }
 
 exports.sprite = sprite;

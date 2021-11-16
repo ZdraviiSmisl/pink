@@ -13,7 +13,7 @@
   grid-template-rows: 66px 1fr;
 }
 
-.page-header__logo {
+.page__logo-catalog {
   grid-column: 1/ 1;
   grid-row: 1/ -1;
   cursor: pointer;
@@ -66,7 +66,7 @@
     grid-template-rows: 110px 1fr;
   }
 
-  .page-header__logo {
+  .page__logo-catalog {
     padding-top: 24px;
   }
 

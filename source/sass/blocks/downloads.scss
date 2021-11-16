@@ -184,9 +184,10 @@ color: $color-red-thirty;
     }
 
     &--index {
-      margin-bottom: 62px;
+      margin-bottom: 88px;
+      padding-bottom: 87px;
+      background-position: 62% 99%,50% 0;
       background-image: url("../../img/background/phone-desktop@1x.png"), url("../../img/background/back-desktop.jpg");
-      background-position: 68% 100%, 50% 0;
       background-size: 1050px, cover;
 
       @media (min-resolution: 2dppx) {
@@ -196,8 +197,8 @@ color: $color-red-thirty;
   }
 
   .downloads__wrapper {
-    width: 1200px;
-    padding: 0 130px;
+    width: 980px;
+    padding: 0;
     box-sizing: border-box;
   }
 
@@ -207,9 +208,10 @@ color: $color-red-thirty;
   }
 
   .downloads__title--tablet {
-    margin: 5px 672px 228px 25px;
+    margin: 0 689px 206px 0;
     font-size: 50px;
     line-height: 68px;
+    transform: translateY(115px);
   }
 
   .downloads__link {
@@ -223,8 +225,7 @@ color: $color-red-thirty;
   }
 
   .downloads__text {
-    padding-right: 9px;
-    padding-bottom: 86px;
+   padding: 0;
   }
 
 }

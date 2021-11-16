@@ -94,6 +94,7 @@
 .page-nav__toggle > .page-nav__menu::after {
   display: block;
   position: absolute;
+  right: 0;
   width: 100%;
   height: 4px;
   background-color: $color-white;
@@ -119,10 +120,6 @@
 .page-nav__menu:active::before,
 .page-nav__menu:active::after {
   opacity: 0.3;
-}
-
-.page-checkbox:checked ~.page-header__wrapper .page-nav__toggle{
-  width: 27px;
 }
 
 .page-checkbox:checked ~ .page-header__wrapper .page-nav__toggle .page-nav__menu {
@@ -213,9 +210,9 @@
 
     display: flex;
     align-items: baseline;
-    padding: 0 130px;
+    padding: 0 0 0 20px;
     box-sizing: border-box;
-    width: 1200px;
+    width: 980px;
     border: none;
     background-color: transparent;
   }
