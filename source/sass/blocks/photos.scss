@@ -2,7 +2,6 @@
 .photos {
   margin: 0 auto;
   padding-top: 54px;
-  height: 100vh;
   color: $color-basic-black;
 }
 
@@ -45,7 +44,7 @@
 
 .photos__text,
 .photos__caption-text {
-  margin: 0 0 25px;
+  margin: 0 0 10px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -61,12 +60,11 @@
 
 .photos__daily-post {
   margin-bottom: 20px;
-  padding: 0 20px;
 }
 
 .photos__inner-wrapper {
   display: flex;
-  padding-top: 25px;
+  padding-top: 12px;
   padding-left: 17px;
   flex-flow: column wrap;
   box-sizing: border-box;
@@ -87,7 +85,7 @@
 }
 
 .photos__author {
-  margin: 0 0 14px;
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
   text-align: left;
@@ -104,7 +102,7 @@
 }
 
 .photos__link-counter {
-  margin-bottom: 26px;
+  margin-bottom: 19px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -117,6 +115,10 @@
   color: $color-red;
 }
 
+.photos__link-last {
+  margin-bottom: 22px;
+}
+
 .photos__link-counter:before {
   content: "";
   width: 13px;
@@ -126,7 +128,7 @@
   background-repeat: no-repeat;
 }
 
-@media(min-width: $tablet-desktop) {
+@media(min-width: $width-tablet) {
 
   .photos {
     padding-top: 100px;

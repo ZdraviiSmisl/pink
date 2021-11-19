@@ -20,11 +20,11 @@ const del = require("del");
 // Styles
 
 const styles = () => {
-  return gulp.src("source/sass/*.scss", {sourcemaps: true})
+  return gulp.src("source/sass/*.scss", { sourcemaps: true })
     .pipe(plumber())
     .pipe(postcss([
-postcssImport(),
-postcssUrl(),
+      postcssImport(),
+      postcssUrl(),
     ],{syntax: postScss}))
     .pipe(sass())
     .pipe(postcss([

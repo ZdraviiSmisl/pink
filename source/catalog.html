@@ -70,19 +70,19 @@
         <picture>
           <source type="image/webp" media="(min-width: 980px)" srcset="img/photos/panorama-desktop@1.webp 1x, img/photos/panorama-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 660px)" srcset="img/photos/panorama-tablet@1.webp 1x, img/photos/panorama-tablet@2x.webp 2x">
-  <!--
+<!--
           <source type="image/webp" srcset="img/photos/panorama-mobile@1x.webp 1x, img/photos/panorama-mobile@2.webp 2x">
-  -->
+-->
           <source media="(min-width: 980px)" srcset="img/photos/panorama-desktop@1x.jpg, img/photos/panorama-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/photos/panorama-tablet@1x.jpg, img/photos/panorama-tablet@2x.jpg 2x">
           <img class="photos__main-img" src="img/photos/panorama-mobile@1x.jpg" srcset="img/photos/panorama-mobile@2x.jpg 2x"  alt="panorama photo">
         </picture>
       </div>
-      <article class="photos__daily-post">
+      <article class="photos__daily-post page__corrector">
         <div class="photos__inner-wrapper photos__first-wrapper">
           <h3 class="visually-hidden">Переход через мост</h3>
           <p class="photos__author photos__first-author">Анна<time class="photos__post-time" datetime="2021-05-12">(5 минут назад)</time></p>
-          <p class="photos__caption-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <p class="photos__caption-text">Прыгать или нет? Напишите в комментарии свой совет и<br>смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           <a class="photos__link-counter photos__link-first" href="#">Нравится: 215</a>
         </div>
       </article>
@@ -177,15 +177,15 @@
             <h3 class="visually-hidden">Фото пассажирского лайнера</h3>
             <p class="photos__author">Надежда<time class="photos__post-time" datetime="2021-05-12">(45 часов назад)</time></p>
             <p class="photos__text">Всем GM и взаимные лайки!</p>
-            <a class="photos__link-counter link" href="#">Нравится: 2560</a>
+            <a class="photos__link-counter photos__link-last link" href="#">Нравится: 2560</a>
           </div>
         </article>
       </div>
     </section>
-   <!-- <section class="editor">
+    <section class="editor">
       <p class="editor__title">Затмите их всех!</p>
       <p class="editor__title">Выкладывайте все, что накопилось в телефоне!</p>
-      <div class="editor__wrapper">
+      <div class="editor__wrapper page__corrector">
         <h2 class="visually-hidden">Инструмент обработки изображений</h2>
         <form class="editor__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
           <div class="wrapper">
@@ -219,7 +219,7 @@
             </fieldset>
           </div>
           <fieldset class="editor__field-slider editor__field">
-            <input class="editor__slider" type="range" min="1" max="100" value="85">
+            <input class="editor__slider" type="range" min="1" max="100" value="86">
           </fieldset>
           <div class="outer__wrapper">
             <div class="wrapper">
@@ -256,9 +256,9 @@
           </div>
         </form>
       </div>
-    </section>-->
+    </section>
   </main>
- <!-- <footer class="footer">
+  <footer class="footer">
     <div class="footer__wrapper">
       <div class="footer__part footer__logo">
         <span class="visually-hidden">PINK</span>
@@ -278,7 +278,7 @@
         <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Логотип компании"></a>
       </div>
     </div>
-  </footer>-->
+  </footer>
   <script src="js/navigation-site.min.js"></script>
   </body>
 </html>
