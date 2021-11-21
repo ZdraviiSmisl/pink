@@ -258,6 +258,15 @@
     display: block;
     padding: 0 314px;
     font-size: 18px;
+
+    &:nth-of-type(2) {
+      margin-bottom: 90px;
+    }
+  }
+
+  .photos__panorama-wrap::before {
+    top: 54px;
+    right: 130px;
   }
 
   .photos__even-2 {
@@ -268,9 +277,17 @@
     padding: 0 130px;
   }
 
+  .photos__post-time {
+    padding-left: 0;
+  }
+
   .photos__daily-post:before {
     top: 54px;
     right: 130px;
+  }
+
+  .photos__caption-text {
+    margin-bottom: 22px;
   }
 
   .photos__wrapper {
@@ -278,11 +295,16 @@
     grid-template-columns: repeat(3,1fr);
   }
 
+  .photos__short-1,
+  .photos__short-2 {
+    margin-bottom: 40px;
+  }
+
   .photos__inner-wrapper {
     padding-left: 27px;
   }
 
   .photos__short-2 {
-    margin-bottom: 25px;
+    margin-bottom: 38px;
   }
 }

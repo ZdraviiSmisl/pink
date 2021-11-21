@@ -176,11 +176,11 @@
 
   .editor-form__submit {
     margin-bottom: 24px;
-    padding: 15px 81px;
+    padding: 15px 77px;
   }
 
   .editor-form__reset {
-    padding: 15px 94px;
+    padding: 15px 91px;
   }
 
   .editor__field-toggles {
@@ -201,7 +201,7 @@
   }
 
   .editor__toggle-contrast {
-    margin-bottom: 69px;
+    margin-bottom: 70px;
   }
 
   .editor__slider {
@@ -223,7 +223,7 @@
 
   .editor__last-img {
     left: 7px;
-    top: -7px;
+    top: -6px;
   }
 
   .editor__field-buttons {
@@ -233,6 +233,19 @@
 
 @media (min-width: $width-desktop ) {
 
+  .editor {
+    margin-bottom: 92px;
+    background-color: $color-white;
+  }
+
+  .editor__title {
+    padding-top: 15px;
+
+    &:last-of-type::after {
+      height: 66px;
+    }
+  }
+
   .wrapper {
     margin:0;
     padding: 0;
@@ -241,20 +254,30 @@
 
   .editor__form {
     justify-content: space-between;
-    padding: 57px 60px 57px 80px;
+    padding: 57px 60px 3px 80px;
+    background-color: $color-grey;
   }
 
   .editor__group-buttons {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    transform: translateX(24px);
   }
 
   .editor__field-toggles {
-    margin-bottom: 114px;
+    margin-bottom: 113px;
+    padding-left: 26px;
   }
 
   .editor__slider-img {
-    top: -14px;
+    top: -20px;
+    left: 0;
+  }
+
+  .editor__last-img {
+    left: 5px;
+    top: -13px;
   }
 
   .editor__toggle {
@@ -262,6 +285,7 @@
   }
 
   .editor__slider {
+    margin-right: 30px;
     width: 288px;
   }
 
@@ -270,11 +294,11 @@
   }
 
   .editor-form__submit {
-    margin: 0 44px 0 0;
-    padding: 21px 42px;
+    margin: 0 30px 0 0;
+    padding: 16px 42px;
   }
 
   .editor-form__reset {
-    padding: 21px 55px;
+    padding: 16px 55px;
   }
 }

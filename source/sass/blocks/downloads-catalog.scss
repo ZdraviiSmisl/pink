@@ -71,8 +71,11 @@
 
     &--catalog {
       padding-bottom: 1px;
-      background-position: 110% 7px, 50% -105px;
-
+      background-position: 5px 7px;
     }
+  }
+
+  .downloads-catalog__title {
+    padding: 95px 150px 87px 150px;
   }
 }
