@@ -7,9 +7,14 @@
   margin-bottom: 46px;
   box-shadow: 0 -400px 0 0 hsl(202, 45%, 13%);
 
-  &--catalog {
+  &--catalog,
+  &--form {
     background-position: 50% 0, 50% -105px;
     margin: 0 0 -10px 0;
+  }
+
+  &--form {
+    margin: 0;
   }
 }
 
@@ -17,13 +22,18 @@
   padding-top: 1px;
 }
 
-.downloads-catalog__title {
+.downloads-catalog__title,
+.downloads-form__title {
   margin: 0;
   padding: 93px 0 77px 0;
   font-size: 24px;
   line-height: 33px;
   font-weight: 300;
   text-align: center;
+}
+
+.downloads-form__title {
+  padding: 93px 0 45px;
 }
 
 
@@ -45,6 +55,15 @@
         width: 100%;
         padding-bottom: 42px;
     }
+
+    &--form {
+      background-position: 50% -101px, 50% -105px;
+      width: 100%;
+      text-align: center;
+      /*
+      padding: 65px 0 0;
+      */
+    }
   }
 
   .downloads-catalog__title {
@@ -53,6 +72,14 @@
     font-size: 50px;
     line-height: 68px;
     font-weight: 300;
+  }
+
+  .downloads-form__title {
+    font-size: 50px;
+    line-height: 68px;
+    width: 620px;
+    margin: 0 0 17px 0;
+    padding: 110px 0 43px;
   }
 }
 
@@ -77,5 +104,11 @@
 
   .downloads-catalog__title {
     padding: 95px 150px 87px 150px;
+  }
+
+  .downloads-form__title {
+    width: 747px;
+    margin: 0 0 46px 97px;
+    padding: 105px 0 43px;
   }
 }

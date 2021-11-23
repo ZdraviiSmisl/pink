@@ -1,6 +1,6 @@
 
 .request {
-  padding-top: 54px;
+  padding-top: 45px;
 }
 
 .request__title {
@@ -16,15 +16,11 @@
 }
 
 .request__title--mobile {
-  margin: 0 0 51px 0;
-  padding: 0 20px;
+  margin: 0 0 35px 0;
   display: block;
 }
 
 .request__wrapper {
-  margin: 0 auto;
-  width: 320px;
-  box-sizing: border-box;
 }
 
 .form {
@@ -37,11 +33,13 @@
   border: none;
 }
 
+.page__corrector {
+  margin: 0 auto;
+}
+
 .form__box {
   display: flex;
   flex-flow: column wrap;
-  max-width: 320px;
-  padding: 0 20px;
   box-sizing: border-box;
 }
 
@@ -51,12 +49,11 @@
 
 .form__achievements {
   order: 2;
-  padding: 42px 0 0 0;
+  padding: 40px 0 0 0;
   background-color: $color-grey;
 }
 
 .form__container {
-  padding: 0 20px;
   text-align: center;
   display: flex;
   flex-flow: column wrap;
@@ -64,19 +61,19 @@
 
 .form__info {
   order: 3;
-  padding-top: 42px;
+  padding-top: 31px;
 }
 
 .form__apps {
   order: 4;
-  padding-top: 42px;
+  padding-top: 38px;
   background-color: $color-grey;
 }
 
 .form__textarea {
   order: 5;
-  margin-bottom: 52px;
-  padding-top:42px;
+  margin-bottom: 48px;
+  padding-top: 32px;
 }
 
 .form__submit-block {
@@ -106,10 +103,10 @@
   text-align: center;
   text-transform: uppercase;
   color: $color-red;
-  padding: 0 51px;
+  padding: 0 15px;
 
   &:last-of-type {
-    margin-bottom: 52px;
+    margin-bottom: 37px;
   }
 }
 
@@ -128,39 +125,31 @@
 }
 
 .form__achievements-label {
-  margin-bottom:  69px;
-
-  &:last-of-type {
-    margin-bottom: 55px;
-  }
-}
-
-.form__email {
-  margin-bottom: 44px;
+  margin-bottom:  43px;
 }
 
 .form__apps-label {
-  margin-bottom: 62px;
+  margin-bottom: 24px;
 
   &:last-of-type {
-    margin-bottom: 54px;
+    margin-bottom: 35px;
   }
 }
 
 .form__user-label, .form__label {
   display: block;
-  margin-bottom: 17px;
+  margin-bottom: 5px;
   padding-left: 24px;
 }
 
 
 .form__label-review {
-  margin-bottom: 22px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
 .form__input {
-  margin: 0 0 29px 0;
+  margin: 0 0 17px 0;
   padding: 0;
   width: 100%;
   box-sizing: border-box;
@@ -180,6 +169,11 @@
   }
 }
 
+.form__email {
+  margin-bottom: 42px;
+}
+
+
 .form-checkbox + .form__achievements-label {
   display: inline-flex;
   align-items: center;
@@ -187,7 +181,7 @@
 
   &:before {
     content: "";
-    margin-right: 22px;
+    margin-right: 20px;
     display: inline-block;
     flex: 0 0 auto;
     width: 35px;
@@ -260,28 +254,33 @@
 .form__patronymic,
 .form__phone,
 .form__email {
-  padding-top: 23px;
-  padding-bottom: 23px;
+  padding-top: 14px;
+  padding-bottom: 15px;
   padding-left: 20px;
+}
+
+.form__patronymic {
+  margin-bottom: 41px;
 }
 
 .form__text {
   margin: 0;
-  width: 100%;
   height: auto;
-  max-height: 197px;
+  max-height: 183px;
+  max-width: 258px;
   padding: 0;
   border: 2px solid $color-grey2;
   outline: none;
 }
 
 .form__text[placeholder] {
-  padding-left: 20px;
-  padding-top: 22px;
+  padding-top: 14px;
+  padding-right: 18px;
+  text-indent: 20px;
 }
 
 .form__link-submit {
-  margin-bottom: 46px;
+  margin-bottom: 34px;
   display: block;
   font-size: 18px;
   line-height: 30px;
@@ -289,15 +288,15 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $color-white;
-  padding: 23px 45px;
+  padding: 17px 45px;
   box-sizing: border-box;
   background-color: $color-green;
   border-radius: 2px;
 }
 
 .form__text-footnote {
-  margin-bottom: 26px;
-  font-size: 18px;
+  margin-bottom: 55px;
+  font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
@@ -307,11 +306,9 @@
   color: $color-red;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $width-tablet) {
 
   .request__wrapper {
-    width: 660px;
-    padding:0 20px;
   }
 
   .request__title--mobile {
@@ -482,11 +479,9 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $width-desktop) {
 
   .request__wrapper {
-    width: 1200px;
-    padding: 0 130px;
   }
 
   .form__box {
