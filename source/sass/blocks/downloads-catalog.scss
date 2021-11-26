@@ -93,6 +93,10 @@
       padding-bottom: 1px;
       background-position: 5px 7px;
     }
+
+    &--form {
+      background-position: 17px 7px;
+    }
   }
 
   .downloads-catalog__title {
@@ -100,8 +104,6 @@
   }
 
   .downloads-form__title {
-    width: 747px;
-    margin: 0 0 46px 97px;
-    padding: 105px 0 43px;
+    padding: 93px 0 10px;
   }
 }
