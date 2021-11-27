@@ -304,6 +304,10 @@
   color: $color-red;
 }
 
+.form__footnote--desktop {
+  display: none;
+}
+
 @media (min-width: $width-tablet) {
 
   .request {
@@ -463,7 +467,7 @@
     }
 
     .form__text {
-      margin-bottom: 49px;
+      margin-bottom: 41px;
       max-width: 478px;
       max-height: 175px;
       transform: translate(59px,-2px);
@@ -542,7 +546,7 @@
   .form {
     display: grid;
     grid-column-gap: 74px;
-    grid-row-gap: 70px;
+    grid-row-gap: 48px;
     grid-template-columns: repeat(2,1fr);
     grid-auto-flow: row;
   }
@@ -551,12 +555,18 @@
     width: 100%;
   }
 
+  .form-checkbox + .form__achievements-label {
+    &::before {
+      margin: 0 20px;
+    }
+  }
+
   .form__user-date {
-    grid-row: 1/2;
-    grid-column: 1/2;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
 
     .form__user-label {
       margin: 0;
@@ -600,14 +610,14 @@
     }
 
   .form__info {
-    margin-bottom: 0;
+    margin-bottom: 19px;
     grid-row: 2/3;
     grid-column: 1/3;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-column-gap: 74px;
     align-items: center;
-    padding: 44px 60px 0 60px;
+    padding: 25px 60px 0 60px;
 
     .form__wrap {
       margin: 0;
@@ -615,9 +625,8 @@
     }
 
     .form__label {
-      margin-bottom: 23px;
+      margin-bottom: 13px;
     }
-
   }
 
   .form__label--phone {
@@ -632,6 +641,7 @@
 
     .form__legend-achievements {
       margin-bottom: 0;
+      transform: translate(252px,-16px);
     }
 
     .form__container {
@@ -639,7 +649,7 @@
       grid-template-columns: repeat(3,1fr);
       grid-template-rows: repeat(2,1fr);
       align-items: center;
-      padding: 54px 0 7px 62px;
+      padding: 22px 0 5px 62px;
     }
 
     .form__achievements-label {
@@ -658,21 +668,44 @@
     }
   }
 
+  .form__first-label,
+  .form__second-label {
+    transform: translateX(-23px);
+  }
+
   .form__textarea {
-    margin: 0;
+    margin: 0 0 15px 0;
     grid-row: 4/5;
     grid-column: 1/3;
     border-radius: 1px;
-    padding: 45px 60px;
+    padding: 31px 0 0 0;
 
     .form__text {
-      height: 124px;
+      padding-right: 0;
+      max-width: initial;
+      width: 816px;
+      height: 111px;
       text-align: left;
+    }
+
+    .form__text[placeholder] {
     }
   }
 
   .form__submit-block {
+    margin-bottom: 65px;
     grid-row: 5/6;
     grid-column: 1/3;
+
+    .form__text-footnote {
+      display: none;
+    }
+
+    .form__footnote--desktop {
+      display: block;
+      text-transform: uppercase;
+    }
   }
+
+
 }
