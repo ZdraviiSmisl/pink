@@ -1,15 +1,13 @@
 .form-error {
+  width: 320px;
 }
 
 .form-error__wrapper {
   text-align: center;
-  outline: 3px solid red;
-
-  @include wrapper;
 }
 
 .form-error__title {
-  margin: 0 0 37px 0;
+  margin: 0 0 26px 0;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -18,22 +16,21 @@
 
 .form-error__text {
   margin: 0;
-  padding-bottom: 50px;
-  font-size: 18px;
+  padding-bottom: 36px;
+  font-size: 14px;
   line-height: 24px;
   font-weight: 400;
 }
 
 .form-error__container {
   margin: 0 auto;
-  padding: 52px 20px;
+  padding: 5px 20px 50px 20px;
   box-sizing: border-box;
   text-align: center;
-  outline: 3px solid fuchsia;
 }
 
 .form-error__button {
-  padding: 23px 124px;
+  padding: 16px 126px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -44,58 +41,56 @@
 }
 
 @media (min-width: 660px) {
+  .form-error {
+    width: 460px;
+  }
 
   .form-error__wrapper {
     padding: 0;
-    outline: 3px solid black;
   }
 
   .form-error__title {
-    margin-bottom: 37px;
-    padding: 49px 32px 0 32px;
+    margin-bottom: 24px;
+    padding: 49px 180px 0 180px;
     font-size: 30px;
     line-height: 40px;
     font-weight: 700;
   }
 
   .form-error__text {
-    padding: 0 65px 40px 65px;
+    padding: 0 150px 27px 150px;
     font-size: 18px;
   }
 
   .form-error__container {
     width: 460px;
-    outline: 3px solid navy;
   }
 
   .form-error__button {
-    padding: 23px 135px;
+    padding: 16px 135px;
   }
 }
 
-@media (min-width: 908px) {
-
-  .form-error__wrapper {
-    outline: 3px solid gold;
+@media (min-width: 980px) {
+  .form-error {
+    width: 777px;
   }
 
   .form-error__title {
-    margin-bottom: 33px;
+    margin-bottom: 23px;
   }
 
   .form-error__text {
-    padding-bottom: 71px;
-    padding-left: 201px;
-    padding-right: 201px;
+    padding: 0 263px 62px 263px;
   }
 
   .form-error__container {
-    width: 780px;
+    padding: 50px 0 50px 0;
+    width: 777px;
     background-color: $color-grey;
-    outline: 3px solid magenta;
   }
 
   .form-error__button {
-    padding: 23px 155px;
+    padding: 17px 137px;
   }
 }

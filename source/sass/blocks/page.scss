@@ -38,5 +38,17 @@ a {
 }
 
 .page__modal {
+  margin: 0 auto;
   display: none;
+  width: 320px;
+  box-shadow: 0 7px 15px var(--special-modal-shadow);
+
+  @media (min-width: 660px) {
+    width: 460px;
+  }
+
+  @media (min-width: 980px) {
+    width: 780px;
+  }
+
 }
