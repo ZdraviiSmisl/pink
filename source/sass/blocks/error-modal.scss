@@ -1,8 +1,6 @@
-.form-error {
-  width: 320px;
-}
-
 .form-error__wrapper {
+  padding-top: 40px;
+  width: 100%;
   text-align: center;
 }
 
@@ -41,24 +39,20 @@
 }
 
 @media (min-width: 660px) {
-  .form-error {
-    width: 460px;
-  }
-
   .form-error__wrapper {
     padding: 0;
   }
 
   .form-error__title {
     margin-bottom: 24px;
-    padding: 49px 180px 0 180px;
+    padding: 49px 122px 0 122px;
     font-size: 30px;
     line-height: 40px;
     font-weight: 700;
   }
 
   .form-error__text {
-    padding: 0 150px 27px 150px;
+    padding: 0 81px 27px 81px;
     font-size: 18px;
   }
 
@@ -72,21 +66,18 @@
 }
 
 @media (min-width: 980px) {
-  .form-error {
-    width: 777px;
-  }
 
   .form-error__title {
     margin-bottom: 23px;
   }
 
   .form-error__text {
-    padding: 0 263px 62px 263px;
+    padding: 0 214px 62px 214px;
   }
 
   .form-error__container {
     padding: 50px 0 50px 0;
-    width: 777px;
+    width: 780px;
     background-color: $color-grey;
   }
 
