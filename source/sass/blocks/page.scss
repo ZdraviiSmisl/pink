@@ -38,11 +38,15 @@ a {
 }
 
 .page__modal {
-  margin: 0 auto;
-  /*
+  margin: auto;
   display: none;
-  */
+  position: fixed;
+  top: 25vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: 320px;
+  background-color: $color-white;
   box-shadow: 0 7px 15px var(--special-modal-shadow);
 
   @media (min-width: 660px) {
@@ -51,6 +55,11 @@ a {
 
   @media (min-width: 980px) {
     width: 780px;
+    height: 377px;
   }
 
+}
+
+.page__modal-show {
+  display: block;
 }

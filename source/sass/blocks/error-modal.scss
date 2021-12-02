@@ -1,3 +1,7 @@
+.form-error {
+  height: 290px;
+}
+
 .form-error__wrapper {
   padding-top: 40px;
   width: 100%;
@@ -39,6 +43,11 @@
 }
 
 @media (min-width: 660px) {
+
+  .form-error {
+    height: 363px;
+  }
+
   .form-error__wrapper {
     padding: 0;
   }
@@ -66,6 +75,10 @@
 }
 
 @media (min-width: 980px) {
+
+ /* .form-error {
+    height: 377px;
+  }*/
 
   .form-error__title {
     margin-bottom: 23px;
