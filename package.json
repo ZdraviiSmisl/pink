@@ -29,8 +29,8 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
+    "test": "npm run editorconfig && npm run stylelint && w3c-html-validator source",
+    "build": "gulp style",
     "start": "gulp"
   },
   "browserslist": [
@@ -47,7 +47,6 @@
     "source/sass/**/*.scss"
   ],
   "engines": {
-    "node": "^12 || ^14"
-  },
-  "dependencies": {}
+    "node": "^12||^16"
+  }
 }

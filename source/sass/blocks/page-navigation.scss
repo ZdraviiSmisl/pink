@@ -1,5 +1,5 @@
 .page-navigation,
-.page-navigation--opened{
+.page-navigation--opened {
   --nav-bg: var(--special-blue);
   margin: 0;
   position: relative;
@@ -176,11 +176,11 @@
 
 @media (min-width: 980px) {
 
-  .page-navigation {
+  .page-navigation,
+  .page-navigation--opened {
+    --nav-bg: transparent;
     display: flex;
     justify-content: flex-end;
-    background-color: transparent;
-    box-shadow: none;
 
     &::before {
       content: initial;

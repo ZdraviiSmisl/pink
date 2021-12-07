@@ -38,16 +38,26 @@
   padding-right: 15px;
 }
 
+
 .footer__copyright-link:before {
   display: block;
   content: "";
   width: 27px;
   height: 34px;
-  background-image: url("../../img/icons/html academy.svg");
+  background-image: url("../../img/icons/sprite.svg#html-academy");
   background-repeat: no-repeat;
   background-position: center;
-
 }
+
+.footer__copyright-link:hover:before {
+  background-image: url("../../img/icons/sprite.svg#html-academy-hover");
+}
+
+.footer__copyright-link:active:before {
+  background-image: url("../../img/icons/sprite.svg#html-academy-active");
+}
+
+
 @media (min-width: 660px) {
 
   .footer__wrapper {
