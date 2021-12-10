@@ -281,12 +281,19 @@
   <footer class="footer-other-pages">
     <div class="footer-other__wrapper page__corrector">
       <div class="footer-other__part footer-other__logo">
+        <a class="footer__logo-link logo" href="#">
         <span class="visually-hidden">PINK</span>
-        <picture>
-          <source srcset="img/icons/logotype-blue-desktop.svg" media="(min-width: 980px)">
-          <source srcset="img/icons/logotype-blue-tablet.svg" media="(min-width: 768px)">
-          <img src="img/icons/logotype-blue-tablet.svg" alt="Логотип сайта pink">
-        </picture>
+          <div class="footer__logo-tablet">
+            <svg class="footer-other__logo-img" width="147" height="40">
+              <use href="./img/icons/logo-footer.svg#desktop-logo"/>
+            </svg>
+          </div>
+          <div class="footer__logo-desktop">
+            <svg class="footer-other__logo-img" width="147" height="40">
+              <use href="./img/icons/logo-footer.svg#tablet-logo"/>
+            </svg>
+          </div>
+        </a>
       </div>
       <div class="footer-other__part footer-other__social">
         <picture>
