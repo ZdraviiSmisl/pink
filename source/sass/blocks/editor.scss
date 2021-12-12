@@ -113,9 +113,13 @@
   appearance: none;
   width: 15px;
   height: 15px;
-  background-image: url("../../img/icons/slider.svg");
+  background-image: url("../../img/icons/sprite.svg#slider");
   background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.editor__slider:active::-webkit-slider-thumb {
+background-image: url("../../img/icons/sprite.svg#slider-active");
 }
 
 .editor__field-buttons {
@@ -128,7 +132,7 @@
 @media (min-width: $width-tablet) {
 
   .editor {
-    margin: 0 auto 30px auto;
+    margin: 0 auto 38px auto;
     padding-bottom: 0;
 
     &::after {
@@ -234,7 +238,7 @@
 @media (min-width: $width-desktop ) {
 
   .editor {
-    margin-bottom: 92px;
+    margin-bottom: 98px;
     background-color: $color-white;
   }
 

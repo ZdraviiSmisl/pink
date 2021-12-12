@@ -222,19 +222,19 @@
           <div class="wrapper">
             <fieldset class="editor__field-buttons editor__field">
               <button class="editor__button button" aria-label="кнопка кадрирования изображения">
-                <picture>
+               <!-- <picture>
                   <img class="editor__pic" src="img/icons/crop-mobile.svg" srcset="img/icons/crop-mobile@2x.svg" alt="">
-                </picture>
+                </picture>-->
               </button>
               <button class="editor__button button" aria-label="кнопка заливки изображения">
-                <picture>
+              <!--  <picture>
                   <img class="editor__pic" src="img/icons/fill-mobile.svg" srcset="img/icons/fill-mobile@2x.svg" alt="">
-                </picture>
+                </picture>-->
               </button>
               <button class="editor__button button" aria-label="контраст изображения">
-                <picture>
+               <!-- <picture>
                   <img class="editor__pic" src="img/icons/contrast-mobile.svg" srcset="img/icons/contrast-mobile@2x.svg" alt="">
-                </picture>
+                </picture>-->
               </button>
             </fieldset>
           </div>
@@ -245,25 +245,28 @@
             <div class="wrapper">
               <fieldset class="editor__field-toggles editor__field">
                 <div class="editor__toggle editor__toggle-crop" aria-label="регулятор">
-                  <input class="editor__slider" type="range" min="1" max="100" value="85">
-                  <picture>
+                  <input class="editor__slider" id="crop" type="range" min="1" max="100" value="85">
+                  <label for="crop"></label>
+                 <!-- <picture>
                     <source media="(min-width: 980px)" srcset="img/icons/crop-mobile.svg">
                     <img class="editor__slider-img" src="img/icons/crop-tablet.svg" alt="">
-                  </picture>
+                  </picture>-->
                 </div>
                 <div class="editor__toggle editor__toggle-fill" aria-label="регулятор">
-                  <input class="editor__slider" type="range" min="1" max="100" value="14">
-                  <picture>
+                  <input class="editor__slider" id="fill" type="range" min="1" max="100" value="14">
+                  <label for="fill"></label>
+                 <!-- <picture>
                     <source media="(min-width: 980px)" srcset="img/icons/fill-mobile.svg">
                     <img class="editor__slider-img" src="img/icons/fill-tablet.svg" alt="">
-                  </picture>
+                  </picture>-->
                 </div>
                 <div class="editor__toggle editor__toggle-contrast" aria-label="регулятор">
-                  <input class="editor__slider" type="range" min="1" max="100" value="52">
-                  <picture>
-                    <source media="(min-width: 980px)" srcset="img/icons/contrast-mobile.svg">
-                    <img class="editor__slider-img editor__last-img" src="img/icons/contrast-tablet.svg" alt="">
-                  </picture>
+                  <input class="editor__slider" id="contrast" type="range" min="1" max="100" value="52">
+                  <label for="contrast"></label>
+                  <!--  <picture>
+                      <source media="(min-width: 980px)" srcset="img/icons/contrast-mobile.svg">
+                      <img class="editor__slider-img editor__last-img" src="img/icons/contrast-tablet.svg" alt="">
+                    </picture>-->
                 </div>
               </fieldset>
             </div>
@@ -281,7 +284,7 @@
   <footer class="footer-other-pages">
     <div class="footer-other__wrapper page__corrector">
       <div class="footer-other__part footer-other__logo">
-        <a class="footer__logo-link logo" href="#">
+        <a class="footer__logo-link logo">
         <span class="visually-hidden">PINK</span>
           <div class="footer__logo-tablet">
             <svg class="footer-other__logo-img" width="147" height="40">
@@ -295,14 +298,18 @@
           </div>
         </a>
       </div>
-      <div class="footer-other__part footer-other__social">
-        <picture>
-          <img src="img/icons/socials.svg" width="178" height="54" alt="">
-        </picture>
+
+      <div class="footer-other__part social">
+        <a class="social__link social__link--tw" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">We're on Twitter</span></a>
+        <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">We're on Facebook</span></a>
+        <a class="social__link social__link__yt" href="https://www.youtube.com/c/HTMLAcademyRUS"><span class="visually-hidden">We're on Youtube</span></a>
       </div>
-      <div class="footer-other__part footer-other__copyright ">
-        <span class="footer-other__copyright-text">Разработано</span>
-        <a class="footer-other__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTMLAcademy logo company"></a>
+
+      <div class="footer-other__part copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <span class="visually-hidden">HTMLAcademy logo company</span>
+        </a>
       </div>
     </div>
   </footer>
