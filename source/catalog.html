@@ -205,7 +205,7 @@
       <div class="editor__wrapper page__corrector">
         <h2 class="visually-hidden">Инструмент обработки изображений</h2>
         <form class="editor__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
-          <div class="wrapper">
+          <div class="editor__edit-photo wrapper">
             <fieldset class="editor__field-img editor__field">
               <a class="editor__link" href="#" aria-label="редактируемое изображение">
                 <picture>
@@ -221,21 +221,9 @@
           </div>
           <div class="wrapper">
             <fieldset class="editor__field-buttons editor__field">
-              <button class="editor__button button" aria-label="кнопка кадрирования изображения">
-               <!-- <picture>
-                  <img class="editor__pic" src="img/icons/crop-mobile.svg" srcset="img/icons/crop-mobile@2x.svg" alt="">
-                </picture>-->
-              </button>
-              <button class="editor__button button" aria-label="кнопка заливки изображения">
-              <!--  <picture>
-                  <img class="editor__pic" src="img/icons/fill-mobile.svg" srcset="img/icons/fill-mobile@2x.svg" alt="">
-                </picture>-->
-              </button>
-              <button class="editor__button button" aria-label="контраст изображения">
-               <!-- <picture>
-                  <img class="editor__pic" src="img/icons/contrast-mobile.svg" srcset="img/icons/contrast-mobile@2x.svg" alt="">
-                </picture>-->
-              </button>
+              <button class="editor__button editor__crop button" type="button" aria-label="кнопка кадрирования изображения"></button>
+              <button class="editor__button editor__fill button" type="button" aria-label="кнопка заливки изображения"></button>
+              <button class="editor__button editor__contrast button" type="button" aria-label="контраст изображения"></button>
             </fieldset>
           </div>
           <fieldset class="editor__field-slider editor__field">
@@ -247,26 +235,16 @@
                 <div class="editor__toggle editor__toggle-crop" aria-label="регулятор">
                   <input class="editor__slider" id="crop" type="range" min="1" max="100" value="85">
                   <label for="crop"></label>
-                 <!-- <picture>
-                    <source media="(min-width: 980px)" srcset="img/icons/crop-mobile.svg">
-                    <img class="editor__slider-img" src="img/icons/crop-tablet.svg" alt="">
-                  </picture>-->
                 </div>
+
                 <div class="editor__toggle editor__toggle-fill" aria-label="регулятор">
                   <input class="editor__slider" id="fill" type="range" min="1" max="100" value="14">
                   <label for="fill"></label>
-                 <!-- <picture>
-                    <source media="(min-width: 980px)" srcset="img/icons/fill-mobile.svg">
-                    <img class="editor__slider-img" src="img/icons/fill-tablet.svg" alt="">
-                  </picture>-->
                 </div>
+
                 <div class="editor__toggle editor__toggle-contrast" aria-label="регулятор">
                   <input class="editor__slider" id="contrast" type="range" min="1" max="100" value="52">
                   <label for="contrast"></label>
-                  <!--  <picture>
-                      <source media="(min-width: 980px)" srcset="img/icons/contrast-mobile.svg">
-                      <img class="editor__slider-img editor__last-img" src="img/icons/contrast-tablet.svg" alt="">
-                    </picture>-->
                 </div>
               </fieldset>
             </div>
