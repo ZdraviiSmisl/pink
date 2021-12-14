@@ -16,12 +16,12 @@ const patronymicInput = form.querySelector(".form__patronymic")
 const emailInput = form.querySelector(".form__email");
 const phoneInput = form.querySelector(".form__phone");
 const messageInput = form.querySelector(".form__text");
-const linkSubmit = form.querySelector(".form__link-submit");
+const linkSubmit = form.querySelector("input[type='submit']");
 const modalError = document.body.querySelector(".form-error");
 const modalSuccess = document.body.querySelector(".modal__success");
 const closeModalError = document.body.querySelector(".modal-close");
 const closeModalSuccess = document.body.querySelector(".modal__button");
-
+const inputsForm = form.querySelectorAll("input");
 
 
 
@@ -44,11 +44,18 @@ try {
 }
 
 
+/*
 const validateInputs= ()=>{
   if(!firstNameInput.value) {
 
   }
 }
+*/
+function btnDisable() {
+  linkSubmit.classList.remove("form__link-submit")
+  linkSubmit.classList.add("form__btn-disable");
+}
+
 
 form.addEventListener("submit",(e)=> {
   if(!emailInput.value && !firstNameInput.value && !lastNameInput.value) {
@@ -81,6 +88,10 @@ closeModalError.addEventListener("click",(e) => {
 closeModalSuccess.addEventListener("click",(e) => {
   e.preventDefault();
   modalSuccess.classList.remove("page__modal-show");
+  for(let i= 0; i <= inputsForm.length; i++) {
+    inputsForm[i].value = " ";
+    linkSubmit.value= "Отправить форму"
+  }
 })
 
 window.addEventListener("keydown",(e)=>{

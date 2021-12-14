@@ -120,15 +120,15 @@
                 <div class="form__box">
                   <p class="form__mobile-title">С каким приложением путешествовали?</p>
                   <label class="form__apps-label">
-                    <input class="form__app-ios input-radio" type="radio" name="app" value="app-1" checked>
+                    <input class="form__app-ios input-radio" type="radio" name="ios" value="app-1" checked>
                     <span class="form__radio">Pink для iOS</span>
                   </label>
                   <label class="form__apps-label">
-                    <input class="form__app-android input-radio" type="radio" name="app" value="app-2">
+                    <input class="form__app-android input-radio" type="radio" name="android" value="app-2">
                     <span class="form__radio">Pink на Android</span>
                   </label>
                   <label class="form__apps-label">
-                    <input class="form__app-windows input-radio" type="radio" name="app" value="app-3">
+                    <input class="form__app-windows input-radio" type="radio" name="windows-phone" value="app-3">
                     <span class="form__radio">Windows Phone</span>
                   </label>
                 </div>
@@ -172,25 +172,36 @@
     </main>
 
     <footer class="footer-other-pages">
-      <div class="footer-other__wrapper page__corrector">
-        <div class="footer-other__part footer-other__logo">
+    <div class="footer-other__wrapper page__corrector">
+      <div class="footer-other__part footer-other__logo">
+        <a class="footer__logo-link logo">
           <span class="visually-hidden">PINK</span>
-          <picture>
-            <source srcset="img/icons/logotype-blue-desktop.svg" media="(min-width: 980px)">
-            <source srcset="img/icons/logotype-blue-tablet.svg" media="(min-width: 768px)">
-            <img src="img/icons/logotype-blue-tablet.svg" alt="Логотип сайта pink">
-          </picture>
-        </div>
-        <div class="footer-other__part footer-other__social">
-          <picture>
-            <img src="img/icons/socials.svg" width="178" height="54" alt="">
-          </picture>
-        </div>
-        <div class="footer-other__part footer-other__copyright ">
-          <span class="footer-other__copyright-text">Разработано</span>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Логотип компании"></a>
-        </div>
+          <div class="footer__logo-tablet">
+            <svg class="footer-other__logo-img" width="147" height="40">
+              <use href="./img/icons/logo-footer.svg#tablet-logo"/>
+            </svg>
+          </div>
+          <div class="footer__logo-desktop">
+            <svg class="footer-other__logo-img" width="147" height="40">
+              <use href="./img/icons/logo-footer.svg#desktop-logo"/>
+            </svg>
+          </div>
+        </a>
       </div>
+
+      <div class="footer-other__part social">
+        <a class="social__link social__link--tw" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">We're on Twitter</span></a>
+        <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">We're on Facebook</span></a>
+        <a class="social__link social__link__yt" href="https://www.youtube.com/c/HTMLAcademyRUS"><span class="visually-hidden">We're on Youtube</span></a>
+      </div>
+
+      <div class="footer-other__part copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <span class="visually-hidden">HTMLAcademy logo company</span>
+        </a>
+      </div>
+    </div>
     </footer>
     <script src="js/navigation-site.min.js"></script>
     <script src="js/modal-windows.min.js"></script>
