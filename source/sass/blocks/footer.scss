@@ -84,7 +84,7 @@
 
   .footer__wrapper {
     width: 1200px;
-    padding: 0 130px 75px 130px;
+    padding: 0 0 75px 0;
   }
 
   .footer__logo {
@@ -95,10 +95,10 @@
     font-size: 18px;
   }
 
-  .footer__copyright {
+ /* .footer__copyright {
     padding-right: 128px;
   }
-
+*/
   .footer__social {
     padding-right: 0;
     padding-top: 6px;

@@ -101,7 +101,7 @@ form.addEventListener("submit",(e)=> {
 
 
 linkSubmit.addEventListener("click", ()=>{
-  if(!emailInput.value || !firstNameInput.value || !lastNameInput.value) {
+  if(!emailInput.value || !firstNameInput.value || !lastNameInput.value||!phoneInput.value) {
     modalError.style.display = "block";
   } else {
     modalSuccess.classList.add("page__modal-show");

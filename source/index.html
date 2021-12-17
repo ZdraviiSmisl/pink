@@ -263,18 +263,25 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <div class="footer__part footer__logo">
-        <span class="visually-hidden">PINK</span>
-        <picture>
-          <source srcset="img/icons/logotype-blue-desktop.svg" media="(min-width: 1200px)">
-          <source srcset="img/icons/logotype-blue-tablet.svg" media="(min-width: 768px)">
-          <img src="img/icons/logotype-blue-tablet.svg" alt="Логотип сайта pink">
-        </picture>
+      <div class="footer-other__part footer-other__logo">
+        <a class="footer__logo-link logo">
+          <span class="visually-hidden">PINK</span>
+          <div class="footer__logo-tablet">
+            <svg class="footer-other__logo-img" width="147" height="40">
+              <use href="./img/icons/logo-footer.svg#tablet-logo"/>
+            </svg>
+          </div>
+          <div class="footer__logo-desktop">
+            <svg class="footer-other__logo-img" width="147" height="40">
+              <use href="./img/icons/logo-footer.svg#desktop-logo"/>
+            </svg>
+          </div>
+        </a>
       </div>
-      <div class="footer__part footer__social">
-        <picture>
-          <img src="img/icons/socials.svg" width="178" height="54" alt="">
-        </picture>
+      <div class="footer-other__part social">
+        <a class="social__link social__link--tw" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">We're on Twitter</span></a>
+        <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">We're on Facebook</span></a>
+        <a class="social__link social__link__yt" href="https://www.youtube.com/c/HTMLAcademyRUS"><span class="visually-hidden">We're on Youtube</span></a>
       </div>
       <div class="footer__part footer__copyright ">
         <span class="footer__copyright-text">Разработано</span>
