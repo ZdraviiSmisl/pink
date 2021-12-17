@@ -22,9 +22,7 @@ const modalSuccess = document.body.querySelector(".modal__success");
 const closeModalError = document.body.querySelector(".modal-close");
 const closeModalSuccess = document.body.querySelector(".modal__button");
 const inputsForm = form.querySelectorAll("input");
-/*
 const requiredFields=form.querySelectorAll("input[required]");
-*/
 
 
 let isStorageSupport = true;
@@ -45,33 +43,50 @@ try {
   isStorageSupport = false;
 }
 
-enableButton(firstNameInput,lastNameInput,emailInput);
-
-
-function enableButton (firstInput,secondInput,ThirdInput) {
-  if (firstInput.value !== "" || secondInput.value !== "" || ThirdInput.value !== "") {
-    linkSubmit.classList.remove("form__link-disabled");
-    linkSubmit.classList.add("form__link-submit");
-  }
-
+function submitForm(){
+  form.reset();
+  linkSubmit.disabled=true;
+  return false;
 }
 
-/*for(let i = 0;i <= inputsForm.length;i++) {
+
+function enableButton () {
+   let canSubmit = true;
+
+
+    if(firstNameInput.value==0 || lastNameInput.value==0 || emailInput.value==0) {
+      canSubmit = false;
+      linkSubmit.classList.remove("form__btn-submit");
+      linkSubmit.classList.add("form__btn-disabled")
+    }else {
+      linkSubmit.classList.remove("form__btn-disabled");
+      linkSubmit.classList.add("form__btn-submit");
+
+    }
+  linkSubmit.disabled = !canSubmit;
+}
+window.onload = enableButton;
+
+
+/*for(let i = 0;i <= requiredFields.length;i++) {
   inputsForm[i].addEventListener("input",(e)=> {
     if(e.target.value!=="") {
-      linkSubmit.classList.remove("form__link-disabled");
-      linkSubmit.classList.add("form__link-submit");
+      linkSubmit.classList.remove("form__btn-disabled");
+      linkSubmit.classList.add("form__btn-submit");
+
     }else {
-      linkSubmit.classList.remove("form__link-submit");
-      linkSubmit.classList.add("form__link-disabled")
+      linkSubmit.classList.remove("form__btn-submit");
+      linkSubmit.classList.add("form__btn-disabled")
     }
   })
 }*/
 
 
 form.addEventListener("submit",(e)=> {
+
   if(!emailInput.value || !firstNameInput.value || !lastNameInput.value) {
     e.preventDefault();
+
   } else  {
     if(isStorageSupport) {
       localStorage.setItem("nameUser", firstNameInput.value);
@@ -82,6 +97,7 @@ form.addEventListener("submit",(e)=> {
     }
   }
 });
+
 
 
 linkSubmit.addEventListener("click", ()=>{
@@ -100,10 +116,8 @@ closeModalError.addEventListener("click",(e) => {
 closeModalSuccess.addEventListener("click",(e) => {
   e.preventDefault();
   modalSuccess.classList.remove("page__modal-show");
-  for(let i= 0; i <= inputsForm.length; i++) {
-    inputsForm[i].value = " ";
-    linkSubmit.value= "Отправить форму"
-  }
+  linkSubmit.classList.remove("form__btn-submit");
+  linkSubmit.classList.add("form__btn-disabled")
 })
 
 window.addEventListener("keydown",(e)=>{

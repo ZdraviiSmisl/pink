@@ -278,8 +278,8 @@
   text-indent: 20px;
 }
 
-.form__link-submit,
-.form__link-disabled {
+.form__btn-submit,
+.form__btn-disabled {
   margin-bottom: 34px;
   display: block;
   padding: 17px 45px;
@@ -294,7 +294,7 @@
   cursor: pointer;
 }
 
-.form__link-submit {
+.form__btn-submit {
   color: $color-white;
   background-color: $color-green;
 
@@ -308,7 +308,7 @@
 
 }
 
-.form__link-disabled {
+.form__btn-disabled {
   color: $color-white;
   background-color: $color-grey2;
 }
@@ -536,7 +536,7 @@
     font-size: 18px;
   }
 
-  .form__link-submit {
+  .form__btn-submit {
     padding: 17px 58px;
     height: 100%;
   }

@@ -70,11 +70,11 @@
               <div class="form__box">
                 <div class="form__user-wrapper">
                   <label class="form__user-label" for="last-name">Фамилия:</label>
-                  <input class="form__last-name form__input" type="text" id="last-name" placeholder="Укажите фамилию *" required>
+                  <input class="form__last-name form__input" type="text" id="last-name" placeholder="Укажите фамилию *" onkeyup="enableButton()" required>
                 </div>
                 <div class="form__user-wrapper">
                   <label class="form__user-label" for="first-name">Имя:</label>
-                  <input class="form__first-name form__input" type="text" id="first-name" placeholder="Введите ваше имя *" required>
+                  <input class="form__first-name form__input" type="text" id="first-name" placeholder="Введите ваше имя *" onkeyup="enableButton()" required>
                 </div>
                 <div class="form__user-wrapper">
                   <label class="form__user-label" for="patronymic">Отчество:</label>
@@ -111,7 +111,7 @@
               </div>
               <div class="form__wrap">
                 <label class="form__label form__label--email" for="e-mail">Адрес Почты</label>
-                <input class="form__email form__input" type="email" name="email" id="e-mail" placeholder="Введите почту *" required>
+                <input class="form__email form__input" type="email" name="email" id="e-mail" placeholder="Введите почту *" onkeyup="enableButton()" required>
               </div>
             </fieldset>
             <fieldset class="form__fieldset form__apps form__fieldset-wrap">
@@ -142,7 +142,7 @@
               </div>
             </fieldset>
             <div class="form__submit-block form__corrector">
-              <input class="form__link-disabled" type="submit" value="Отправить форму" aria-label="Отправить форму">
+              <input class="form__btn-disabled" type="submit" value="Отправить форму" aria-label="Отправить форму">
               <p class="form__text-footnote"><span class="form__footnote">*</span> — обязательные поля</p>
               <p class="form__footnote--desktop"><span class="form__footnote">*</span> — обязательные для заполнения поля</p>
             </div>
@@ -166,7 +166,7 @@
           <p class="modal__text text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
         </div>
         <div class="modal__inside-container">
-          <button class="modal-close modal__button  button" type="button" aria-label="закрыть окно">Закрыть окно</button>
+          <button class="modal-close modal__button  button" type="button" aria-label="закрыть окно" onclick="submitForm()">Закрыть окно</button>
         </div>
       </section>
     </main>
