@@ -22,7 +22,9 @@ const modalSuccess = document.body.querySelector(".modal__success");
 const closeModalError = document.body.querySelector(".modal-close");
 const closeModalSuccess = document.body.querySelector(".modal__button");
 const inputsForm = form.querySelectorAll("input");
-
+/*
+const requiredFields=form.querySelectorAll("input[required]");
+*/
 
 
 let isStorageSupport = true;
@@ -43,22 +45,32 @@ try {
   isStorageSupport = false;
 }
 
+enableButton(firstNameInput,lastNameInput,emailInput);
 
-/*
-const validateInputs= ()=>{
-  if(!firstNameInput.value) {
 
+function enableButton (firstInput,secondInput,ThirdInput) {
+  if (firstInput.value !== "" || secondInput.value !== "" || ThirdInput.value !== "") {
+    linkSubmit.classList.remove("form__link-disabled");
+    linkSubmit.classList.add("form__link-submit");
   }
+
 }
-*/
-function btnDisable() {
-  linkSubmit.classList.remove("form__link-submit")
-  linkSubmit.classList.add("form__btn-disable");
-}
+
+/*for(let i = 0;i <= inputsForm.length;i++) {
+  inputsForm[i].addEventListener("input",(e)=> {
+    if(e.target.value!=="") {
+      linkSubmit.classList.remove("form__link-disabled");
+      linkSubmit.classList.add("form__link-submit");
+    }else {
+      linkSubmit.classList.remove("form__link-submit");
+      linkSubmit.classList.add("form__link-disabled")
+    }
+  })
+}*/
 
 
 form.addEventListener("submit",(e)=> {
-  if(!emailInput.value && !firstNameInput.value && !lastNameInput.value) {
+  if(!emailInput.value || !firstNameInput.value || !lastNameInput.value) {
     e.preventDefault();
   } else  {
     if(isStorageSupport) {

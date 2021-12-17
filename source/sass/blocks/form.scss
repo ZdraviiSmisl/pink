@@ -278,21 +278,25 @@
   text-indent: 20px;
 }
 
-.form__link-submit {
+.form__link-submit,
+.form__link-disabled {
   margin-bottom: 34px;
   display: block;
+  padding: 17px 45px;
+  box-sizing: border-box;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  color: $color-white;
-  padding: 17px 45px;
-  box-sizing: border-box;
-  background-color: $color-green;
   border: none;
   border-radius: 2px;
   cursor: pointer;
+}
+
+.form__link-submit {
+  color: $color-white;
+  background-color: $color-green;
 
   &:hover {
     background-color: var(--dark-green);
@@ -304,7 +308,7 @@
 
 }
 
-.form__btn-disable {
+.form__link-disabled {
   color: $color-white;
   background-color: $color-grey2;
 }
