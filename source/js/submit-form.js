@@ -15,7 +15,6 @@ const firstNameInput = form.querySelector(".form__first-name");
 const patronymicInput = form.querySelector(".form__patronymic")
 const emailInput = form.querySelector(".form__email");
 const phoneInput = form.querySelector(".form__phone");
-const messageInput = form.querySelector(".form__text");
 const linkSubmit = form.querySelector("input[type='submit']");
 const modalError = document.body.querySelector(".form-error");
 const modalSuccess = document.body.querySelector(".modal__success");
@@ -65,22 +64,8 @@ function enableButton () {
     }
   linkSubmit.disabled = !canSubmit;
 }
+
 window.onload = enableButton;
-
-
-/*for(let i = 0;i <= requiredFields.length;i++) {
-  inputsForm[i].addEventListener("input",(e)=> {
-    if(e.target.value!=="") {
-      linkSubmit.classList.remove("form__btn-disabled");
-      linkSubmit.classList.add("form__btn-submit");
-
-    }else {
-      linkSubmit.classList.remove("form__btn-submit");
-      linkSubmit.classList.add("form__btn-disabled")
-    }
-  })
-}*/
-
 
 form.addEventListener("submit",(e)=> {
 
@@ -97,7 +82,6 @@ form.addEventListener("submit",(e)=> {
     }
   }
 });
-
 
 
 linkSubmit.addEventListener("click", ()=>{

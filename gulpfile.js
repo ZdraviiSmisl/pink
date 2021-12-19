@@ -119,7 +119,7 @@ const copy = (done)=>{
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
     "source/img/**/*.svg",
-    "source/img/favicons",
+    "source/favicons/*",
     "source/manifest.webmanifest"
    ], {
     base: "source"
