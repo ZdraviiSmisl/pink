@@ -88,19 +88,22 @@
   }
 
   .footer__logo {
-    padding-left: 129px;
+    padding-left: 130px;
+  }
+
+  .footer__social {
+    padding-right: 0;
+    padding-top: 6px;
+  }
+
+  .footer__copyright {
+    padding-top:14px;
+    padding-right: 130px;
   }
 
   .footer__copyright-text {
     font-size: 18px;
   }
 
- /* .footer__copyright {
-    padding-right: 128px;
-  }
-*/
-  .footer__social {
-    padding-right: 0;
-    padding-top: 6px;
-  }
+
 }
