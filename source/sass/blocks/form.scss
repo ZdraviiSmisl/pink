@@ -191,8 +191,8 @@
     border: 2px solid $color-grey2;
     border-radius: 3px;
     cursor: pointer;
-   }
- }
+  }
+}
 
 .form-checkbox:hover+ .form__achievements-label:before {
   border: 2px solid $color-basic-black;
@@ -594,9 +594,9 @@
       padding: 0 20px 0 0;
     }
 
-     .form__last-name,
-     .form__first-name,
-     .form__patronymic {
+    .form__last-name,
+    .form__first-name,
+    .form__patronymic {
         padding-top: 16px;
         box-sizing: border-box;
       }

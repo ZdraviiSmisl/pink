@@ -84,11 +84,11 @@
 
 @media (min-width: 980px) {
 
- .header-catalog__wrapper {
-   grid-template-columns: max-content 1fr;
-   grid-template-rows: auto;
-   gap: 24px;
- }
+  .header-catalog__wrapper {
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: auto;
+    gap: 24px;
+  }
 
   .page__tablet-catalog {
     display: none;
