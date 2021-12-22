@@ -6,11 +6,12 @@
 }
 
 .studies__wrapper {
+
   @include wrapper;
 }
 
 .studies__link {
-  color: var(--basic-pink);
+  color: red;
 }
 
 .studies__info {
@@ -26,16 +27,17 @@
 }
 
 @media (min-width: 660px) {
+
   .studies {
     display: block;
   }
 
   .studies__wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
     width: 660px;
 
-    &::before {
+    &:before {
       content: "";
       width: 236px;
       height: 276px;
@@ -57,20 +59,21 @@
 }
 
 @media (min-width: 1200px) {
+
   .studies {
     background-color: $color-grey;
   }
 
   .studies__wrapper {
-    width: 1200px;
+    width:1200px ;
     padding: 108px 130px 0 130px;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2,auto);
     gap: 200px;
 
-    &::before {
+    &:before {
       width: 298px;
       height: 345px;
-      transform: translate(133px, -66px);
+      transform: translate(133px,-66px);
     }
   }
 

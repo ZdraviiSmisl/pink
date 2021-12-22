@@ -25,12 +25,10 @@
 }
 
 @mixin link-unstyled {
-  &,
-  &:visited,
-  &:hover,
-  &:active {
+  &, &:visited, &:hover, &:active {
     text-decoration: none;
     font-variant: inherit;
     font-family: inherit;
   }
 }
+
