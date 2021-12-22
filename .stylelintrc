@@ -3,6 +3,9 @@
 
   "rules": {
     "declaration-no-important": true,
-    "indentation": [2, {"ignore": ["inside-parens"]}]
+    "indentation": [2, {"ignore": ["inside-parens"]}],
+    "color-named":null,
+    "no-duplicate-selectors": null,
+    "declaration-block-no-duplicate-properties": null
   }
 }

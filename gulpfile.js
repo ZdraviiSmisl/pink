@@ -1,6 +1,6 @@
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
-const sass = require("gulp-sass");
+const sass = require("gulp-sass")(require("sass"));
 const csso = require("postcss-csso");
 const postcss = require("gulp-postcss");
 const postcssUrl = require("postcss-url");
@@ -16,124 +16,120 @@ const webp = require("gulp-webp");
 const svgSprite = require("gulp-svg-sprite");
 const del = require("del");
 
-
 // Styles
 
 const styles = () => {
-  return gulp.src("source/sass/*.scss", { sourcemaps: true })
+  return gulp
+    .src("source/sass/*.scss", { sourcemaps: true })
     .pipe(plumber())
-    .pipe(postcss([
-      postcssImport(),
-      postcssUrl(),
-    ],{syntax: postScss}))
+    .pipe(postcss([postcssImport(), postcssUrl()], { syntax: postScss }))
     .pipe(sass())
-    .pipe(postcss([
-      autoprefixer(),
-      csso()
-    ]))
-    .pipe(
-      rename({extname: ".min.css"
-      })
-    )
-    .pipe(gulp.dest("build/css",{sourcemaps: "."}))
+    .pipe(postcss([autoprefixer(), csso()]))
+    .pipe(rename({ extname: ".min.css" }))
+    .pipe(gulp.dest("build/css", { sourcemaps: "." }))
     .pipe(sync.stream());
-}
+};
 
 exports.styles = styles;
 
 // HTML
 
-const html = ()=>{
-  return gulp.src("source/*.html")
-    .pipe(htmlmin({collapseWhitespace: true}))
+const html = () => {
+  return gulp
+    .src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
-}
+};
 
 exports.html = html;
 
 // Scripts
 
-const scripts = ()=> {
-  return gulp.src("source/js/*.js")
+const scripts = () => {
+  return gulp
+    .src("source/js/*.js")
     .pipe(terser())
     .pipe(
       rename({
-        extname: ".min.js"
+        extname: ".min.js",
       })
     )
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
-}
+};
 
-exports.scripts = scripts
+exports.scripts = scripts;
 
 // Images
 
-const optimizeImages=()=> {
-  return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(squoosh())
-    .pipe(gulp.dest("build/img"))
-
-}
+const optimizeImages = () => {
+  return gulp.src("source/img/**/*.{png,jpg}").pipe(squoosh()).pipe(gulp.dest("build/img"));
+};
 
 exports.optimizeImages = optimizeImages;
 
 const copyImages = () => {
-  return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(gulp.dest("build/img"))
-}
+  return gulp.src("source/img/**/*.{png,jpg}").pipe(gulp.dest("build/img"));
+};
 
 exports.images = copyImages;
 
 // Webp
 
 const createWebp = () => {
-  return gulp.src("source/img/**/*.{jpg,png}")
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("build/img"))
-}
+  return gulp
+    .src("source/img/**/*.{jpg,png}")
+    .pipe(webp({ quality: 90 }))
+    .pipe(gulp.dest("build/img"));
+};
 
 exports.createWebp = createWebp;
 
 //Sprites
 
 const sprite = () => {
-  return gulp.src("source/img/icons/*.svg")
-    .pipe(svgSprite({
-      mode: {
-        stack: {
-          sprite: "../sprite.svg"
-        }
-      },
-    }
-    ))
+  return gulp
+    .src("source/img/icons/*.svg")
+    .pipe(
+      svgSprite({
+        mode: {
+          stack: {
+            sprite: "../sprite.svg",
+          },
+        },
+      })
+    )
     .pipe(gulp.dest("build/img/icons"));
-}
+};
 
 exports.sprite = sprite;
 
 //Copy
 
-const copy = (done)=>{
-  gulp.src([
-    "source/fonts/*.{woff2,woff}",
-    "source/*.ico",
-    "source/img/**/*.svg",
-    "source/favicons/*",
-    "source/manifest.webmanifest"
-   ], {
-    base: "source"
-  })
-    .pipe(gulp.dest("build"))
+const copy = (done) => {
+  gulp
+    .src(
+      [
+        "source/fonts/*.{woff2,woff}",
+        "source/*.ico",
+        "source/img/**/*.svg",
+        "source/favicons/*",
+        "source/manifest.webmanifest",
+      ],
+      {
+        base: "source",
+      }
+    )
+    .pipe(gulp.dest("build"));
   done();
-}
+};
 
 exports.copy = copy;
 
 //clean
 
 const clean = () => {
-    return del("build")
+  return del("build");
 };
 
 exports.clean = clean;
@@ -143,14 +139,14 @@ exports.clean = clean;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build",
     },
     cors: true,
     notify: false,
     ui: false,
   });
   done();
-}
+};
 
 exports.server = server;
 
@@ -159,31 +155,20 @@ exports.server = server;
 const reload = (done) => {
   sync.reload();
   done();
-}
+};
 
 // Watcher
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
-  gulp.watch("source/js/*.js",gulp.series(scripts, reload))
-  gulp.watch("source/*.html",gulp.series(html, reload));
-  gulp.watch("source/img/**/*.svg", gulp.series(sprite,reload))
-}
+  gulp.watch("source/js/*.js", gulp.series(scripts, reload));
+  gulp.watch("source/*.html", gulp.series(html, reload));
+  gulp.watch("source/img/**/*.svg", gulp.series(sprite, reload));
+};
 
 // Build
 
-const build = gulp.series(
-  clean,
-  copy,
-  optimizeImages,
-  gulp.parallel(
-    styles,
-    html,
-    scripts,
-    sprite,
-    createWebp
-  ),
-);
+const build = gulp.series(clean, copy /*,  optimizeImages */, gulp.parallel(styles, html, scripts, sprite, createWebp));
 
 exports.build = build;
 
@@ -193,15 +178,6 @@ exports.default = gulp.series(
   clean,
   copy,
   copyImages,
-  gulp.parallel(
-    styles,
-    html,
-    scripts,
-    sprite,
-    createWebp
-  ),
-  gulp.series(
-    server,
-    watcher
-  )
+  gulp.parallel(styles, html, scripts, sprite, createWebp),
+  gulp.series(server, watcher)
 );
