@@ -104,7 +104,7 @@
   line-height: 24px;
   text-align: left;
   font-weight: 700;
-  color: $color-basic-black
+  color: $color-basic-black;
 }
 
 .photos__first-author {
@@ -112,7 +112,7 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
-  color: $color-basic-black
+  color: $color-basic-black;
 }
 
 .photos__link-counter {
@@ -133,7 +133,7 @@
   margin-bottom: 19px;
 }
 
-.photos__link-counter:before {
+.photos__link-counter::before {
   content: "";
   width: 13px;
   height: 12px;
@@ -142,8 +142,7 @@
   background-repeat: no-repeat;
 }
 
-@media(min-width: $width-tablet) {
-
+@media (min-width: $width-tablet) {
   .photos {
     margin-bottom: 43px;
     padding-top: 100px;
@@ -183,7 +182,7 @@
   }
 
   .photos__title-tablet {
-    margin:0 0 78px;
+    margin: 0 0 78px;
     display: block;
     padding-left: 92px;
     padding-right: 92px;
@@ -194,7 +193,7 @@
   }
 
   .photos__inner-wrapper {
-   padding: 22px 10px 17px 28px;
+    padding: 22px 10px 17px 28px;
   }
 
   .photos__first-wrapper {
@@ -208,7 +207,7 @@
     position: relative;
   }
 
-  .photos__link-counter:before {
+  .photos__link-counter::before {
     content: "";
     position: absolute;
     padding-left: 0;
@@ -221,7 +220,7 @@
     right: 59px;
   }
 
-  .photos__link-first:before {
+  .photos__link-first::before {
     content: "";
     position: absolute;
     right: -29px;
@@ -231,7 +230,7 @@
     display: grid;
     row-gap: 20px;
     column-gap: 20px;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .photos__post {
@@ -243,13 +242,12 @@
     margin-bottom: 35px;
   }
 
-  .photos__first-link:before {
-    top:-430px;
+  .photos__first-link::before {
+    top: -430px;
   }
 }
 
 @media (min-width: $width-desktop) {
-
   .photos__title-tablet {
     display: none;
   }
@@ -281,7 +279,7 @@
     padding-left: 0;
   }
 
-  .photos__daily-post:before {
+  .photos__daily-post::before {
     top: 54px;
     right: 130px;
   }
@@ -292,7 +290,7 @@
 
   .photos__wrapper {
     row-gap: 50px;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .photos__short-1,

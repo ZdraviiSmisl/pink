@@ -49,8 +49,8 @@ function submitForm(){
 }
 
 
-function enableButton () {
-   let canSubmit = true;
+function enableButton() {
+  let canSubmit = true;
 
 
     if(firstNameInput.value==0 || lastNameInput.value==0 || emailInput.value==0) {

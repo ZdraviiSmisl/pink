@@ -15,18 +15,18 @@
   color: #283645;
 }
 
- .footer__logo-tablet:hover {
+.footer__logo-tablet:hover {
   color: #d22856;
 }
 
- .footer__logo-tablet:active {
-   color: #283645;
-   opacity: .3;
- }
+.footer__logo-tablet:active {
+  color: #283645;
+  opacity: 0.3;
+}
 
- .footer-other__logo-img {
-   fill: currentColor;
- }
+.footer-other__logo-img {
+  fill: currentColor;
+}
 
 .footer__logo-desktop {
   display: none;
@@ -56,7 +56,7 @@
 }
 
 .social__link:hover::before {
-  border: 3px solid $color-basic-black
+  border: 3px solid $color-basic-black;
 }
 
 .social__link:active::before {
@@ -64,7 +64,7 @@
 }
 
 .social__link:active {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .social__link--tw {
@@ -83,7 +83,7 @@
 }
 
 .social__link__yt::before {
-  transform: translate(-20px,-18px);
+  transform: translate(-20px, -18px);
 }
 
 .copyright {
@@ -99,7 +99,7 @@
   line-height: 18px;
 }
 
-.copyright__link:before {
+.copyright__link::before {
   display: block;
   content: "";
   width: 27px;
@@ -109,22 +109,21 @@
   background-position: center;
 }
 
-.copyright__link:hover:before {
+.copyright__link:hover::before {
   background-image: url("../../img/icons/sprite.svg#html-academy-hover");
 }
 
-.copyright__link:active:before {
+.copyright__link:active::before {
   background-image: url("../../img/icons/sprite.svg#html-academy-active");
 }
 
 
 @media (min-width: 660px) {
-
   .footer-other__wrapper {
     display: grid;
     justify-content: space-between;
-    justify-items: center ;
-    grid-template-columns: repeat(3,auto) ;
+    justify-items: center;
+    grid-template-columns: repeat(3, auto);
     grid-auto-flow: row;
     padding-bottom: 40px;
   }
@@ -144,21 +143,17 @@
 }
 
 @media (min-width: 980px) {
-
   .footer-other__wrapper {
     column-gap: 200px;
   }
 
-  .footer__logo-desktop{
+  .footer__logo-desktop {
     display: block;
+    color: $color-basic-black;
   }
 
   .footer__logo-tablet {
     display: none;
-  }
-
-  .footer__logo-desktop {
-    color: $color-basic-black;
   }
 
   .footer__logo-desktop:hover {
@@ -167,7 +162,7 @@
 
   .footer__logo-desktop:active {
     color: $color-basic-black;
-    opacity: .3;
+    opacity: 0.3;
   }
 
   .copyright__text {
@@ -180,5 +175,4 @@
     padding-right: 0;
     padding-top: 10px;
   }
-
 }
