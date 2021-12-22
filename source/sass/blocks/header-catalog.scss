@@ -56,6 +56,7 @@
 }
 
 @media (min-width: 660px) {
+
   .header-catalog {
     margin-bottom: -110px;
     min-height: 110px;
@@ -70,6 +71,7 @@
   }
 
   .page__tablet-catalog {
+
     & > .logo-glasses {
       display: block;
     }
@@ -81,11 +83,12 @@
 }
 
 @media (min-width: 980px) {
-  .header-catalog__wrapper {
-    grid-template-columns: max-content 1fr;
-    grid-template-rows: auto;
-    gap: 24px;
-  }
+
+ .header-catalog__wrapper {
+   grid-template-columns: max-content 1fr;
+   grid-template-rows: auto;
+   gap: 24px;
+ }
 
   .page__tablet-catalog {
     display: none;
@@ -94,4 +97,5 @@
   .page__desktop-catalog {
     display: block;
   }
+
 }

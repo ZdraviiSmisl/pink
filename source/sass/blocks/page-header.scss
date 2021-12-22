@@ -28,7 +28,7 @@
   border-bottom: 1px solid $color-original-black;
 }
 
-.page-checkbox:checked ~ .page-header__wrapper .page-nav {
+.page-checkbox:checked ~ .page-header__wrapper  .page-nav {
   position: absolute;
   top: 70px;
   left: 0;
@@ -39,7 +39,7 @@
   background-color: $color-basic-black;
 }
 
-.page-checkbox:not(:checked) ~ .page-header__wrapper .page-nav {
+.page-checkbox:not(:checked) ~.page-header__wrapper  .page-nav {
   display: none;
 }
 
@@ -171,12 +171,13 @@
 
   &[aria-current="page"] {
     text-decoration-line: underline;
-    text-decoration-thickness: 2px;
+    text-decoration-thickne: 2px;
     text-underline-offset: 13px;
   }
 }
 
 @media (min-width: 660px) {
+
   .page-header {
     margin-bottom: -110px;
   }
@@ -187,7 +188,7 @@
     padding-top: 27px;
   }
 
-  .page-checkbox:checked ~ .page-header__wrapper .page-nav {
+  .page-checkbox:checked ~ .page-header__wrapper  .page-nav {
     top: 110px;
   }
 
@@ -203,6 +204,7 @@
 }
 
 @media (min-width: 1200px) {
+
   .page-checkbox:not(:checked) ~ .page-header__wrapper,
   .page-checkbox:checked ~ .page-header__wrapper {
 
@@ -215,13 +217,15 @@
     background-color: transparent;
   }
 
-  .page-checkbox:checked ~ .page-header__wrapper .page-nav,
+  .page-checkbox:checked ~ .page-header__wrapper  .page-nav,
   .page-checkbox:not(:checked) ~ .page-header__wrapper .page-nav {
+
     position: static;
     display: block;
     padding-left: 173px;
     background-color: transparent;
-  }
+
+    }
 
   .page__tablet {
     display: none;

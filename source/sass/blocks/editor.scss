@@ -29,7 +29,7 @@
 
   &:last-of-type {
     padding-top: 0;
-  }
+}
 
   &:last-of-type::after {
     content: "";
@@ -61,7 +61,7 @@
 }
 
 .editor__field {
-  margin: 0;
+  margin:0;
   padding: 0;
   border: none;
 }
@@ -76,7 +76,7 @@
 
 .editor__crop,
 .editor__fill,
-.editor__contrast {
+.editor__contrast{
   position: relative;
 }
 
@@ -168,6 +168,8 @@
   }
 }
 
+
+
 .editor-form__reset {
   padding: 15px 102px;
   color: $color-basic-black;
@@ -175,7 +177,7 @@
   opacity: 0.1;
 
   &:hover {
-    opacity: 0.3;
+    opacity: .3;
   }
 
   &:active {
@@ -185,7 +187,7 @@
 }
 
 .editor__slider {
-  appearance: none;
+  -webkit-appearance: none;
   margin: 0 auto 73px auto;
   display: block;
   width: 240px;
@@ -195,6 +197,7 @@
 }
 
 .editor__slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
   appearance: none;
   width: 15px;
   height: 15px;
@@ -204,7 +207,7 @@
 }
 
 .editor__slider:active::-webkit-slider-thumb {
-  background-image: url("../../img/icons/sprite.svg#slider-active");
+background-image: url("../../img/icons/sprite.svg#slider-active");
 }
 
 .editor__field-buttons {
@@ -215,6 +218,7 @@
 }
 
 @media (min-width: $width-tablet) {
+
   .editor {
     margin: 0 auto 38px auto;
     padding-bottom: 0;
@@ -276,7 +280,6 @@
   }
 
   .editor__toggle {
-    display: block;
     position: relative;
     width: 275px;
     border-bottom: 1px solid $color-extra-grey;
@@ -360,6 +363,11 @@
     width: 202px;
   }
 
+  .editor__toggle {
+    position: relative;
+    display: block;
+  }
+
   .editor__slider-img {
     position: absolute;
     left: 4px;
@@ -376,7 +384,8 @@
   }
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: $width-desktop ) {
+
   .editor {
     margin-bottom: 98px;
     background-color: $color-white;
@@ -391,7 +400,7 @@
   }
 
   .wrapper {
-    margin: 0;
+    margin:0;
     padding: 0;
     width: auto;
   }
@@ -475,7 +484,6 @@
 
   .editor__toggle-contrast {
     border-bottom: 0;
-
     label::before {
       top: -18px;
       left: 7px;
