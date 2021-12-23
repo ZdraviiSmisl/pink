@@ -1,6 +1,6 @@
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
-const sass = require("gulp-sass");
+const sass = require("gulp-dart-sass");
 const csso = require("postcss-csso");
 const postcss = require("gulp-postcss");
 const postcssUrl = require("postcss-url");

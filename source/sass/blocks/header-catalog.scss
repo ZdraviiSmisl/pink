@@ -56,7 +56,6 @@
 }
 
 @media (min-width: 660px) {
-
   .header-catalog {
     margin-bottom: -110px;
     min-height: 110px;
@@ -83,7 +82,6 @@
 }
 
 @media (min-width: 980px) {
-
   .header-catalog__wrapper {
     grid-template-columns: max-content 1fr;
     grid-template-rows: auto;
@@ -97,5 +95,4 @@
   .page__desktop-catalog {
     display: block;
   }
-
 }

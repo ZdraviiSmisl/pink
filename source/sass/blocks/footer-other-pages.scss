@@ -99,7 +99,7 @@
   line-height: 18px;
 }
 
-.copyright__link:before {
+.copyright__link::before {
   display: block;
   content: "";
   width: 27px;
@@ -109,11 +109,11 @@
   background-position: center;
 }
 
-.copyright__link:hover:before {
+.copyright__link:hover::before {
   background-image: url("../../img/icons/sprite.svg#html-academy-hover");
 }
 
-.copyright__link:active:before {
+.copyright__link:active::before {
   background-image: url("../../img/icons/sprite.svg#html-academy-active");
 }
 

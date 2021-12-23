@@ -39,7 +39,7 @@
 }
 
 
-.footer__copyright-link:before {
+.footer__copyright-link::before {
   display: block;
   content: "";
   width: 27px;
@@ -49,11 +49,11 @@
   background-position: center;
 }
 
-.footer__copyright-link:hover:before {
+.footer__copyright-link:hover::before {
   background-image: url("../../img/icons/sprite.svg#html-academy-hover");
 }
 
-.footer__copyright-link:active:before {
+.footer__copyright-link:active::before {
   background-image: url("../../img/icons/sprite.svg#html-academy-active");
 }
 
