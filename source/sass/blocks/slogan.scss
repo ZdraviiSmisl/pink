@@ -1,7 +1,7 @@
 .slogan {
   position: relative;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     padding-top: calc(100% / 12);

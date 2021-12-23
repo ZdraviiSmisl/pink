@@ -104,7 +104,7 @@
   line-height: 24px;
   text-align: left;
   font-weight: 700;
-  color: $color-basic-black
+  color: $color-basic-black;
 }
 
 .photos__first-author {
@@ -112,7 +112,7 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
-  color: $color-basic-black
+  color: $color-basic-black;
 }
 
 .photos__link-counter {
@@ -142,7 +142,7 @@
   background-repeat: no-repeat;
 }
 
-@media(min-width: $width-tablet) {
+@media (min-width: $width-tablet) {
   .photos {
     margin-bottom: 43px;
     padding-top: 100px;

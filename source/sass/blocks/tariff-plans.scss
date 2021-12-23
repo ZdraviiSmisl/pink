@@ -33,7 +33,7 @@
   display: block;
   box-sizing: border-box;
   border-collapse: collapse;
-  transition: all ease-in-out .2s;
+  transition: all ease-in-out 0.2s;
 }
 
 .tariffs__tr {
@@ -185,7 +185,7 @@
     &::before {
       top: -106px;
       height: 106px;
-      clip-path: polygon(100% 116px, 0px 106px, 100% 57px);
+      clip-path: polygon(100% 116px, 0 106px, 100% 57px);
     }
   }
 
@@ -289,7 +289,6 @@
     margin: 0 auto;
     width: 1200px;
     padding: 0 130px;
-
   }
 
   .tariffs__th {
@@ -315,7 +314,6 @@
       padding-top: 9px;
       padding-bottom: 6px;
       padding-left: 22px;
-
     }
   }
 

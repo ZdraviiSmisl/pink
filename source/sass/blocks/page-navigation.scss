@@ -16,7 +16,7 @@
     height: 1px;
     background-color: var(--basic-black);
     box-shadow: 30vw 0 0 0 var(--basic-black),
-    -30vw 0 0 0 var(--basic-black);
+      -30vw 0 0 0 var(--basic-black);
   }
 
   &--closed {
@@ -53,7 +53,7 @@
     height: 4px;
     background-color: var(--basic-white);
     box-shadow: 0 10px 0 0 var(--basic-white),
-    0 20px 0 0 var(--basic-white);
+      0 20px 0 0 var(--basic-white);
     border-radius: 1px;
     z-index: 20;
   }
@@ -61,11 +61,11 @@
   &:hover::before {
     background-color: var(--basic-pink);
     box-shadow: 0 10px 0 0 var(--basic-pink),
-    0 20px 0 0 var(--basic-pink);
+      0 20px 0 0 var(--basic-pink);
   }
 
   &:active::before {
-    opacity: .3;
+    opacity: 0.3;
   }
 }
 
@@ -96,7 +96,7 @@
 
   &:active::before,
   &:active::after {
-    opacity: .3;
+    opacity: 0.3;
   }
 }
 
@@ -125,7 +125,7 @@
   }
 
   &::before {
-    --separator: var(--special-blue-pale)
+    --separator: var(--special-blue-pale);
   }
 
   &::after {
@@ -151,7 +151,7 @@
 
   &:active {
     color: var(--basic-pink);
-    opacity: .3;
+    opacity: 0.3;
   }
 
   &[aria-current="page"] {
@@ -209,7 +209,7 @@
     }
 
     &:active {
-      opacity: .3;
+      opacity: 0.3;
     }
   }
 }

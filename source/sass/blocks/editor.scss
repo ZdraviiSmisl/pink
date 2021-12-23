@@ -174,7 +174,7 @@
   opacity: 0.1;
 
   &:hover {
-    opacity: .3;
+    opacity: 0.3;
   }
 
   &:active {
@@ -184,7 +184,7 @@
 }
 
 .editor__slider {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0 auto 73px auto;
   display: block;
   width: 240px;
@@ -194,7 +194,7 @@
 }
 
 .editor__slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  appearance: none;
   appearance: none;
   width: 15px;
   height: 15px;

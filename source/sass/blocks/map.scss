@@ -39,7 +39,6 @@
 }
 
 @media (min-width: 660px) {
-
   .map {
     margin-bottom: 22px;
   }
@@ -49,7 +48,6 @@
   }
 
   .map__wrapper {
-
     &::before {
       height: 70px;
       clip-path: polygon(50% 70px, 0 0, 100% 0);
@@ -58,7 +56,6 @@
 }
 
 @media (min-width: 1200px) {
-
   .map {
     margin-bottom: 71px;
   }
@@ -68,7 +65,6 @@
   }
 
   .map__wrapper {
-
     &::before {
       height: 112px;
       clip-path: polygon(50% 112px, 0 0, 100% 0);
