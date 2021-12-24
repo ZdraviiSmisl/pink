@@ -6,7 +6,7 @@
   padding-top: var(--header-min-height);
   background-color: var(--nav-bg);
   box-shadow: 30vw 0 0 0 var(--nav-bg),
-  -30vw 0 0 0 var(--nav-bg);
+    -30vw 0 0 0 var(--nav-bg);
 
   &::before {
     content: var(--is-nav-visible, "");
@@ -107,7 +107,8 @@
   right: 0;
   background-color: var(--nav-bg);
   box-shadow: 30vw 0 0 0 var(--nav-bg),
-  -30vw 0 0 0 var(--nav-bg);
+    -30vw 0 0 0 var(--nav-bg);
+
   @include list-unstyled;
 }
 
@@ -121,7 +122,7 @@
     width: 100%;
     background-color: var(--separator);
     box-shadow: 30vw 0 0 0 var(--separator),
-    -30vw 0 0 0 var(--separator);
+      -30vw 0 0 0 var(--separator);
   }
 
   &::before {
@@ -143,6 +144,7 @@
   text-decoration: none;
   display: block;
   padding: 16px;
+
   @include link-unstyled;
 
   &:hover {

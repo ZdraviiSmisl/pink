@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
-    <link  href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
-    <link  href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
@@ -197,11 +197,11 @@
     <section class="tariffs">
       <h2 class="visually-hidden">Тарифные планы</h2>
       <div class="tariffs__wrapper">
+        <input class="tariffs__radio tariffs__radio--1" type="radio" name="slide" id="slide-1">
+        <input class="tariffs__radio tariffs__radio--2" type="radio" name="slide" id="slide-2" checked>
+        <input class="tariffs__radio tariffs__radio--3" type="radio" name="slide" id="slide-3">
         <table class="tariffs__table">
           <tbody class="tariffs__tbody">
-          <input class="tariffs__radio tariffs__radio--1" type="radio" name="slide" id="slide-1">
-          <input class="tariffs__radio tariffs__radio--2" type="radio" name="slide" id="slide-2" checked>
-          <input class="tariffs__radio tariffs__radio--3" type="radio" name="slide" id="slide-3">
           <tr class="tariffs__tr">
             <th class="tariffs__th"></th>
             <th class="tariffs__th"><div class="tariffs__info-wrap">База<span class="tariffs__price">1,99 USD</span></div></th>

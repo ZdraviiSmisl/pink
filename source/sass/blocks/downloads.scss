@@ -48,6 +48,7 @@
 .downloads__wrapper {
   width: 320px;
   text-align: center;
+
   @include wrapper();
 }
 
